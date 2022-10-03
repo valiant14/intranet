@@ -315,8 +315,8 @@ Navigation
 /* Global Navigation
 -------------------------------------------------- */
 .global-nav {
-  font-size: 1em;
-  font-size: 1rem;
+  font-size: .85em;
+  font-size: .95rem;
 }
 
 /* Utility Navigation
@@ -333,7 +333,7 @@ Navigation
 /* Main Navigation
 -------------------------------------------------- */
 .main-nav {
-  font-size: .875em;
+  font-size: .5em;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -401,12 +401,13 @@ Navigation
 }
 
 .global-nav li {
-  float: left;
+  float: right;
+  margin-right: 30px;
 }
 
 .main-nav ul {
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 .main-nav ul li {
   position: relative;
@@ -897,7 +898,7 @@ Backgrounds
 }
 
 #bottom {
-  background-color: #222;
+  background-color: #1E1D7A;
 }
 
 /*
@@ -1400,7 +1401,7 @@ Large Screens (980 pixels wide)
   }
 
   .main-nav {
-    font-size: 1em;
+    font-size: .85em;
     float: right;
     border-top: none;
   }

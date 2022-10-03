@@ -9,18 +9,18 @@ const Footer = () => {
         <div class="organization-info">
           <div class="vcard">
             <h2>
-              <a href="./">Brand</a>
+              <a href="./">LOGO</a>
             </h2>
             <p class="contact-info">
-              <span class="org fn">Company Name Inc.</span>
+              <span class="org fn">Seder Group of Company</span>
               <br></br>
-              <span class="adr"><span class="street-address">12345 Main Street</span> <br></br><span class="locality">City Name</span>,
-            <span class="region">Region</span> <span class="postal-code">98765</span></span>
+              <span class="adr"><span class="street-address">12345 Al Malqa District</span> <br></br><span class="locality">Riyadh</span>,
+            <span class="region">Saudi Arabia</span> <span class="postal-code">98765</span></span>
             </p>
             <p class="phone-numbers">
               <span class="tel-admission">
                 <span class="label">Phone:</span>
-                <a href="tel:+1-123-456-7890" class="tel">123-456-7890</a>
+                <a href="tel:+1-123-456-7890" class="tel">123-460-6666</a>
               </span>
               <br></br>
               <span class="tel-campus-safety">
@@ -116,7 +116,7 @@ const Footer = () => {
           </div>
         </nav>
         <div class="site-info">
-          <p class="copyright">Creative Commons <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+          <p class="copyright">Creative Commons <a href="https://creativecommons.org/licenses/by-sa/4.0/">SEDER</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
         </div>
       </section>
     </div>

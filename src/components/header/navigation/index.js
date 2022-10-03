@@ -11,7 +11,7 @@ const Navigations = () => {
                 <img src={seder} alt="" width="90" height="72"></img>
             </div>
             </Col>
-            <Col sm={9}>
+            <Col sm={10}>
             <nav role="navigation" class="main-nav">
                 <ul class="nav justify-content-end">
                     <li class="nav-item">

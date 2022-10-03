@@ -10,15 +10,31 @@ import Footer from './components/footer/index'
 function App() {
   return (
     <div>
-      <Navbar />
-      <Navigations />
-      <Welcome />
+      <Row >
+        <Col>
+          <Navbar />
+        </Col>
+      </Row>
       <Row>
+        <Col className='mt-3'>
+          <Navigations />
+        </Col>
+      </Row>
+      <Row>
+        <Col className='mt-3'>
+          <Welcome />
+        </Col>
+      </Row>
+      <Row className='mt-5'>
         <Col className='mt-5'>
         <ContentView />
         </Col>
       </Row>
-      <Footer/>
+      <Row className='mt-5'>
+        <Col className='mt-5'>
+          <Footer/>
+        </Col>
+      </Row>
 
 
     </div>
