@@ -34,25 +34,25 @@ const Footer = () => {
           <div class="nav-group">
             <div class="container">
               <h4>
-                <a href="#">About</a>
+                <a href="About">About</a>
               </h4>
               <ul>
                 <li>
-                  <a href="#">Members</a>
+                  <a href="Members">Members</a>
                 </li>
                 <li>
-                  <a href="#">History</a>
+                  <a href="History">History</a>
                 </li>
                 <li>
-                  <a href="#">Questions</a>
+                  <a href="Questions">Questions</a>
                 </li>
                 <li>
-                  <a href="#">Mission &amp; Values</a>
+                  <a href="Mission&amp;Values">Mission &amp; Values</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="nav-group">
+          {/* <div class="nav-group">
             <div class="container">
               <h4>
                 <a href="#">Team</a>
@@ -83,8 +83,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="nav-group">
+          </div> */}
+          {/* <div class="nav-group">
             <div class="container">
               <h4>
                 <a href="#">Resources</a>
@@ -113,10 +113,10 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </nav>
         <div class="site-info">
-          <p class="copyright">Creative Commons <a href="https://creativecommons.org/licenses/by-sa/4.0/">SEDER</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+          <p class="copyright">Creative Commons <a href="https://creativecommons.org/licenses/by-sa/4.0/">SEDER</a> | <a href="TermsofUse">Terms of Use</a> | <a href="PrivacyPolicy">Privacy Policy</a></p>
         </div>
       </section>
     </div>

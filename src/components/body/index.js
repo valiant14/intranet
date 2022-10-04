@@ -1,11 +1,12 @@
 import React from 'react'
 import './index.css'
 import Features from './features/index'
-import Upcoming_Events from './upcomingEvents/index'
+import UpcomingEvents from './upcomingEvents/index'
 import Documents from './documents/index'
 import StaffAnnouncement from './staffAnnouncements/index'
 import Weather from './weather/index'
 import { Row, Col } from 'react-bootstrap';
+
 const ContentView = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const ContentView = () => {
                     <Features />
                 </Col>
                 <Col>
-                    <Upcoming_Events />
+                    <UpcomingEvents />
                     <Documents />
                 </Col>
                 <Col>

@@ -1074,7 +1074,7 @@ form.submitted textarea:invalid {
   display: block;
 }
 
-.button,
+/* .button,
 button {
   font-size: 1em;
   font-weight: normal;
@@ -1098,7 +1098,7 @@ button:hover {
 .button:active,
 button:active {
   background: #0098c1;
-}
+} */
 
 
 /*
@@ -1437,4 +1437,16 @@ Large Screens (980 pixels wide)
     float: left;
     width: 12.5%;
   }
+}
+
+.transition-3 {
+  transition: all 0.33s ease;
+  -webkit-transition: all 0.33s ease;
+  -moz-transition: all 0.33s ease;
+}
+
+.transition-5 {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
 }
