@@ -28,11 +28,11 @@ const StaffEssentials = ({data}) => {
                             <li><a>Sort</a></li>
                             <li><a>Share</a></li>
                         </ul>
-                            <div className="form">
+                            {/* <div className="form">
                                 <i className="fa fa-search"></i>
                                 <input type="text" className="form-control form-input" placeholder="Search anything..."></input>
                                 <span className="left-pan"><i className="fa fa-microphone"></i></span>
-                            </div>
+                            </div> */}
                     </div>
 
                     <h1>{contextData}</h1>
