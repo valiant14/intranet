@@ -364,6 +364,8 @@ Branding
 -------------------------------------------------- */
 .branding {
   margin: 0;
+  margin-left: 10%;
+  margin-top: 1rem;
 }
 .branding a {
   display: block;
@@ -403,6 +405,7 @@ Navigation
 .global-nav li {
   float: right;
   margin-right: 30px;
+  margin-top: 5px;
 }
 
 .main-nav ul {
@@ -920,7 +923,7 @@ Branding
 }
 
 .global-nav a {
-  color: #aaa;
+  color: #fff;
 }
 
 .global-nav a:hover {
@@ -1371,12 +1374,12 @@ Medium Screens (750 pixels wide)
 
   .main-nav a {
     padding: 3em 2em;
-    border-bottom: 6px solid #fff;
+    /* border-bottom: 6px solid #fff; */
   }
 
   .main-nav li.active a,
   .main-nav a:hover {
-    border-bottom: 6px solid #0098c1;
+    border-bottom: 2px solid #0098c1;
   }
 
   /* Grid

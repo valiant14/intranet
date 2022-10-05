@@ -1,22 +1,22 @@
 import React from "react";
 import { Row, Col } from 'react-bootstrap';
-
+import { Settings,Smartphone,Link,Briefcase } from 'react-feather';
 const Navbar = () => {
     return (
         <Row>
             <nav id="global-nav" class="global-nav" role="navigation">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                    <a class="nav-link" href="Settings">Settings</a>
+                <ul >
+                    <li>
+                    <a href="Settings"><span><Settings /></span>&nbsp;Settings</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="Apps">Apps</a>
+                    <li>
+                    <a href="Apps"><span><Smartphone/></span>&nbsp;Apps</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="Mylinks">My links</a>
+                    <li>
+                    <a href="Mylinks"><span><Link/></span>&nbsp;My links</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="WorkSpaces">WorkSpaces</a>
+                    <li>
+                    <a aria-current="page" href="WorkSpaces"><span><Briefcase/></span>&nbsp;WorkSpaces</a>
                     </li>
                 </ul>
                 </nav>

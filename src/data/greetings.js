@@ -1,3 +1,4 @@
+
 const Greetings = [
     "Hi, welcome to the advice hour where I can give you random advice 😀",
     "Hey there, if you need random advice, you've come to the right place 🤙",
@@ -6,5 +7,5 @@ const Greetings = [
     "Sliding into my dm's for some advice? 👀 It's ok, I like it 😛"
   ];
 
-  export default Greetings
+export default Greetings;
   

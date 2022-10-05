@@ -1,43 +1,48 @@
 import React from "react";
 import seder from '../../../assets/seder.png'
 import { Row, Col } from 'react-bootstrap';
-
+import {Link } from "react-router-dom";
 const Navigations = () => {
+
     return (
         <>
         <Row>
-            <Col sm={2}>
-            <div class="navbar-brand">
+
+            <Col sm={4}>
+            <div class="branding">
                 <img src={seder} alt="" width="90" height="72"></img>
             </div>
             </Col>
-            <Col sm={10}>
-            <nav role="navigation" class="main-nav">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home">Home</a>
+            <Col sm={8}>
+            <div className="container">
+            <nav role="navigation" class="main-nav justify-content-end">
+                <ul>
+                    <li>
+                        <Link to="/home">Home</Link>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="aboutus">About Us</a>
+                    <li>
+                        <Link to="/about">About Us</Link>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="newevents">News & Events</a>
+                    <li>
+                        <Link to="/news&events">News & Events</Link>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="staffEssentials">Staff Essentials</a>
+                    <li>
+                        <Link to="/staffEssentials" >Staff Essentials</Link>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="contacts">Contacts</a>
+                    <li>
+                        <Link to="/contacts">Contacts</Link>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="departments">Departments</a>
+                    <li>
+                        <Link to="/departments">Departments</Link>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="sendyourfeedback">Send Your Feedback</a>
+                    <li>
+                        <Link to="/sendyourfeedback">Send your Feedback</Link>
                     </li>
                 </ul>
                 </nav>
+                </div>
             </Col>
+
         </Row>
     </>
     )
