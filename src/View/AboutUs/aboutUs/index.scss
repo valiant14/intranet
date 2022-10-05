@@ -1,0 +1,29 @@
+.container-about {
+    padding: 5rem;
+    margin-top: 1rem;
+    width: fit-content;
+
+    p {
+        text-indent: 50px;
+    }
+}
+
+.title-about {
+    color: #1E1D7A;
+    text-transform: uppercase;
+}
+
+.title-seder {
+    color: #0098c1;
+    margin-top: 1rem;
+}
+
+.cover-about {
+    background-image: url('../../../assets/seder.png');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    z-index: 0;
+}
