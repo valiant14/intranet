@@ -8,7 +8,6 @@ const Layout =() => {
         <div>
             <Navbar />
             <Navigations />
-            <Welcome />
         </div>
     )
 }

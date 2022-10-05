@@ -1,15 +1,24 @@
 import React from "react";
-import db from '../../firebase/firebase'
-import { Button } from "react-bootstrap";
+// import {db} from '../../firebase/firebase'
+// import { Button } from "react-bootstrap";
+// import auth from '../../firebase/firebase'
 
-const StaffEssentials = () => {
+const StaffEssentials = ({data}) => {
 
-console.log(db)
-    return (
-        <>
-        <h1>Staff Essentials</h1>
-        </>
+    return(
+        <React.Fragment>
+        <hr></hr>
+        {data.map((item,index) => {
+            console.log(item.Content)
+            return (
+                <div key={index}>
+                    {item.Content}
+                </div>
+            )
+        })}
+        </React.Fragment>
     )
+
 }
 
 
