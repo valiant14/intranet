@@ -52,7 +52,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          {/* <div class="nav-group">
+          <div class="nav-group">
             <div class="container">
               <h4>
                 <a href="#">Team</a>
@@ -83,8 +83,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div> */}
-          {/* <div class="nav-group">
+          </div>
+          <div class="nav-group">
             <div class="container">
               <h4>
                 <a href="#">Resources</a>
@@ -113,7 +113,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div> */}
+          </div>
         </nav>
         <div class="site-info">
           <p class="copyright">Creative Commons <a href="https://creativecommons.org/licenses/by-sa/4.0/">SEDER</a> | <a href="TermsofUse">Terms of Use</a> | <a href="PrivacyPolicy">Privacy Policy</a></p>
