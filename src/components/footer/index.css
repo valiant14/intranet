@@ -996,7 +996,7 @@ FORMS
   color: #ccc;
 }
 
-input,
+/* input,
 select,
 textarea {
   box-sizing: padding-box;
@@ -1008,13 +1008,13 @@ input[type="email"],
 input[type="number"] {
   color: black;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1em;
   width: 100%;
   box-sizing: border-box;
   padding: .75em;
   margin: 0 0 1em;
   border: 1px solid #ccc;
-}
+} */
 
 select {
   background: #fff;

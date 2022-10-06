@@ -7,5 +7,6 @@ const Greetings = [
     "Sliding into my dm's for some advice? 👀 It's ok, I like it 😛"
   ];
 
+
 export default Greetings;
   

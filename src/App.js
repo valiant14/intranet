@@ -8,6 +8,7 @@ import Aboutus from './View/AboutUs/aboutUs';
 import Layout from './View/Layout/index'
 import Newevents from './View/New&Event/index'
 import StaffEssentials from './View/StaffEssentials/index'
+import Forms from './View/StaffEssentials/Form/index'
 import Contacts from './View/Contacts/index'
 import Departments from './View/Department/index'
 import Feedbacks from './View/FeedBack/index'
@@ -67,6 +68,7 @@ onAuthStateChanged(auth, (user) => {
           <Route exact path='/contacts' element={< Contacts />}></Route>
           <Route exact path='/departments' element={< Departments />}></Route>
           <Route exact path='/sendyourfeedback' element={< Feedbacks />}></Route>
+          <Route exact path='/staffEssentials/forms' element={< Forms />}></Route>
       </Routes>
     </BrowserRouter>  
   );

@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from '../../assets/banner.jpg'
 
 const Welcome = () => {
     return (

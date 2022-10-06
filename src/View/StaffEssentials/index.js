@@ -14,7 +14,7 @@ const StaffEssentials = ({data}) => {
                         {data.map((item,index) => {
                             return (
                                 <li key={index}>
-                                    <a onClick={() => setContextData(item.Type)}>{item.Content}</a>
+                                    <a onClick={() => setContextData(item.Content)}>{item.Subject}</a>
                                 </li>
                             );
                             })}
