@@ -18,7 +18,7 @@ const Navigations = () => {
             <nav role="navigation" class="main-nav justify-content-end">
                 <ul>
                     <li>
-                        <Link to="/home">Home</Link>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
                         <Link to="/about">About Us</Link>

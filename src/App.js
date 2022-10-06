@@ -61,7 +61,7 @@ onAuthStateChanged(auth, (user) => {
     <BrowserRouter>
       <Layout />
       <Routes>
-          <Route exact path='/home' element={< Home />}></Route>
+          <Route exact path='/' element={< Home />}></Route>
           <Route exact path='/about' element={< Aboutus />}></Route>
           <Route exact path='/news&events' element={< Newevents />}></Route>
           <Route exact path='/staffEssentials' element={< StaffEssentials data={data}/>}></Route>
