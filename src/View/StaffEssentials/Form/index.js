@@ -3,25 +3,34 @@ import Form from 'react-bootstrap/Form';
 import {Row, Col, Card} from 'react-bootstrap'
 import '../index.scss'
 import React,{useState} from 'react';
-// import { collection,addDoc } from "firebase/firestore";
-// import {db} from '../../../firebase/firebase'
+import { collection,addDoc } from "firebase/firestore";
+import {db} from '../../../firebase/firebase'
 
-async function Forms({data}) {
+function Forms({data}) {
     const [contextData, setContextData] = useState([])
+    const [values, setValues] = useState([]);
     const [types, setTypes] = useState('');
     const [subjects, setSubjects] = useState('');
     const [contents, setContents] = useState('');
 
+    const addData = collection(db, "TBL_Content")
 
-    const onsubmitHandler = (e) => {
+    React.useEffect(() => {
+        RefreshData(data)
+    },[data])
+
+    const RefreshData = (rec) => {
+        setValues({
+            Type: rec.Type,
+            Subject: rec.Subject,
+            Content: rec.Content,
+        })
+    }
+
+    console.log(values)
+    const onsubmitHandler = async (e) => {
         e.preventDefault();
-        const inputData = 
-            {
-                Type: types,
-                Subject: subjects,
-                Content: contents
-            }
-            // const data = addDoc(collection(db, "TBL_Content"))
+            await addDoc(addData, {Type: types,Subject: subjects,Content: contents})
         }
 
   return (
@@ -50,7 +59,7 @@ async function Forms({data}) {
                 Type
                 </Form.Label>
                 <Col sm={10}>
-                <Form.Control type="text" value={types} onChange={e => setTypes(e.target.value)}/>
+                <Form.Control type="text" name="Type" value={types} onChange={(e) => setTypes(e.target.value)}/>
                 </Col>
             </Form.Group>
             <Form.Group as={Row}  className="mb-3">
@@ -58,7 +67,7 @@ async function Forms({data}) {
                 Subject
                 </Form.Label>
                 <Col sm={10}>
-                <Form.Control type="text" value={subjects} onChange={e => setSubjects(e.target.value)}/>
+                <Form.Control type="text" name="Subject" value={subjects} onChange={(e) => setSubjects(e.target.value)}/>
                 </Col>
             </Form.Group>
             <Form.Group as={Row} className="mb-3">
@@ -66,7 +75,7 @@ async function Forms({data}) {
                 Content
                 </Form.Label>
                 <Col sm={10}>
-                <Form.Control as="textarea" row="5" value={contents} onChange={e => setContents(e.target.value)}/>
+                <Form.Control as="textarea" row="5" name="Content" value={contents} onChange={(e) => setContents(e.target.value)}/>
                 </Col>
             </Form.Group>
         
