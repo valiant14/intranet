@@ -20,42 +20,37 @@ import {db} from './firebase/firebase'
 
 
 function App() {
-  const [user, setUser] = React.useState([])
   const [data, setData] = React.useState([])
+  const [formData, setFormData] = React.useState([])
 
   React.useEffect(() => {
-    if(user) {
-      const getDataFromFirebase = []
-      const q = query(collection(db, "TBL_Content"))
-      const unsub = onSnapshot(q, (querySnapshot) => {
-         querySnapshot.docs.map(doc => {
-          getDataFromFirebase.push({...doc.data(), key: doc.id})
-         });
-         setData(getDataFromFirebase)
-      });
-      return () => unsub;
-    }
-  }, [user])
-
-signInAnonymously(auth)
+    signInAnonymously(auth)
     .then(() => {
-      console.log('Login As Anonymous')
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          // const uid = user.uid;
+          // setUser(uid)
+          const getDataFromFirebase = []
+          const q = query(collection(db, "TBL_Content"))
+          const unsub = onSnapshot(q, (querySnapshot) => {
+             querySnapshot.docs.map(doc => {
+              getDataFromFirebase.push({...doc.data(), key: doc.id})
+             });
+             setData(getDataFromFirebase)
+          });
+          return () => unsub;
+        } else {
+          // User is signed out
+          // ...
+        }
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
        // ...
- });
-
-onAuthStateChanged(auth, (user) => {
-      if (user) {
-        const uid = user.uid;
-        setUser(uid)
-      } else {
-        // User is signed out
-        // ...
-      }
+   });
 });
+}, [])
 
   return (
     <BrowserRouter>
@@ -68,7 +63,7 @@ onAuthStateChanged(auth, (user) => {
           <Route exact path='/contacts' element={< Contacts />}></Route>
           <Route exact path='/departments' element={< Departments />}></Route>
           <Route exact path='/sendyourfeedback' element={< Feedbacks />}></Route>
-          <Route exact path='/staffEssentials/forms' element={< Forms />}></Route>
+          <Route exact path='/staffEssentials/forms' element={< Forms data={data}/>}></Route>
       </Routes>
     </BrowserRouter>  
   );
