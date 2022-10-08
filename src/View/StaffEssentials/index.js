@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import {Link } from "react-router-dom";
 import './index.scss'
 
+
 const StaffEssentials = ({data}) => {
     const [contextData, setContextData] = useState([])
 

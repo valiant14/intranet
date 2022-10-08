@@ -46,11 +46,6 @@ function Home() {
         </div>
         </Col>
       </Row>
-      <Row className='mt-5'>
-        <Col className='mt-5'>
-          <Footer/>
-        </Col>
-      </Row>
 
 
     </div>

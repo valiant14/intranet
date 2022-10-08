@@ -15,17 +15,17 @@ function Forms({data}) {
 
     const addData = collection(db, "TBL_Content")
 
-    React.useEffect(() => {
-        RefreshData(data)
-    },[data])
+    // React.useEffect(() => {
+    //     RefreshData(data)
+    // },[data])
 
-    const RefreshData = (rec) => {
-        setValues({
-            Type: rec.Type,
-            Subject: rec.Subject,
-            Content: rec.Content,
-        })
-    }
+    // const RefreshData = (rec) => {
+    //     setValues({
+    //         Type: rec.Type,
+    //         Subject: rec.Subject,
+    //         Content: rec.Content,
+    //     })
+    // }
 
     console.log(values)
     const onsubmitHandler = async (e) => {

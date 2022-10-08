@@ -1,15 +1,17 @@
 import React from "react";
-import Image from '../../assets/banner.jpg'
+import videos from '../../assets/banner-video.mp4'
 
 const Welcome = () => {
     return (
         <>
-        <div class="welcome-container">
-            <div>
-                <h4 class="display-6">Welcome to our digital headquarter</h4>
-                <p class="lead">We are ready to help you get through your working day with ease.</p>
-            </div>
+        <div id="Container">
+            <video autoplay>
+                <source src={videos} type="video/mp4"></source>
+            </video>
+            <h4 class="display-6">Welcome to our digital headquarter</h4>
+            <p class="lead">We are ready to help you get through your working day with ease.</p>
         </div>
+        
         </>
     )
 }
