@@ -5,7 +5,7 @@ const Welcome = () => {
     return (
         <>
         <div id="Container">
-            <video autoplay>
+            <video autoplay muted>
                 <source src={videos} type="video/mp4"></source>
             </video>
             <h4 class="display-6">Welcome to our digital headquarter</h4>
