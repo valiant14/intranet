@@ -63,18 +63,7 @@
   }
 }
 
-.welcome-container {
-  justify-content: center;
-  text-align: center;
-  background-color: #235090;
-  background-image: url(../src/assets/banner-video.webm);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 40vh;
-  padding: 9rem;
-  overflow: hidden;
-  color: #ffffff;
-}
+
 
 #Container {
   width: 100%;
