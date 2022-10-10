@@ -2,7 +2,7 @@ import React from "react";
 import {Col, Row, Card, InputGroup,Form} from 'react-bootstrap'
 import { Sidebar, Menu, MenuItem, SubMenu,useProSidebar } from 'react-pro-sidebar';
 import CardView from '../StaffEssentials/Card/index'
-import { Search,FileText } from 'react-feather';
+import { Search,FileText, ArrowUpRight, Users,BarChart2, DollarSign, LogOut,Flag } from 'react-feather';
 const StaffEssentials = () => {
 
     return (
@@ -117,14 +117,47 @@ const StaffEssentials = () => {
                                     <p className="card-contents">Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
                             </Col>
-                            <Col>
-                                <div className="main-card">
-                                    <div className="card-icons"><FileText/></div>
-                                    <h1 className="card-titles">Policies & Procedures</h1>
-                                    <p className="card-contents">Check our rules or guidelines that we need to achieve & comply.</p>
+                        </Row>
+                        <   Col>
+                                <div className="box-roadmap">
+                                    <h1 className="box-titles">Employee Roadmap</h1>
+                                        <div className="box-containers">
+                                            <p>Recuitment</p>
+                                            <span><Search/></span>
+                                            <div><ArrowUpRight/></div>
+                                        </div>
+                                        <div className="box-containers2">
+                                            <p>On-Boarding</p>
+                                            <span><Users/></span>
+                                            <div><ArrowUpRight/></div>
+                                        </div>
+                                        <div className="box-containers3">
+                                            <p>Benefits</p>
+                                            <span><BarChart2/></span>
+                                            <div><ArrowUpRight/></div>
+                                        </div>
+                                        <div className="box-containers4">
+                                            <p>Payroll</p>
+                                            <span><DollarSign/></span>
+                                            <div><ArrowUpRight/></div>
+                                        </div>
+                                        <div className="box-containers5">
+                                            <p>Leave</p>
+                                            <span><LogOut/></span>
+                                            <div><ArrowUpRight/></div>
+                                        </div>
+                                        <div className="box-containers6">
+                                            <p>Separation</p>
+                                            <span><Flag/></span>
+                                            <div><ArrowUpRight/></div>
+                                        </div>
+                                        {/* <span className="box-containers1"><Search/></span>
+                                        <span className="box-containers2"><Search/></span>
+                                        <span className="box-containers3"><Search/></span>
+                                        <span className="box-containers4"><Search/></span>
+                                        <span className="box-containers5"><Search/></span> */}
                                 </div>
                             </Col>
-                        </Row>
                     </div>
                 </Col>
             </Row>
