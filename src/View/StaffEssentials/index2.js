@@ -59,66 +59,65 @@ const StaffEssentials = () => {
                         <Row>
                             <Col>
                                 <div className="main-card hoverM3">
-                                    <div className="card-icons"><FileText/></div>
-                                    <h1 className="card-titles">Policies & Procedures</h1>
-                                    <p className="card-contents">Check our rules or guidelines that we need to achieve & comply.</p>
+                                    <div><FileText/></div>
+                                    <h1>Policies & Procedures</h1>
+                                    <p>Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
                             </Col>
                             <Col>
                                 <div className="main-card">
-                                    <div className="card-icons"><FileText/></div>
-                                    <h1 className="card-titles">Policies & Procedures</h1>
-                                    <p className="card-contents">Check our rules or guidelines that we need to achieve & comply.</p>
+                                    <div><FileText/></div>
+                                    <h1>Policies & Procedures</h1>
+                                    <p>Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
                             </Col>
                             <Col>
                                 <div className="main-card">
-                                    <div className="card-icons"><FileText/></div>
-                                    <h1 className="card-titles">Policies & Procedures</h1>
-                                    <p className="card-contents">Check our rules or guidelines that we need to achieve & comply.</p>
+                                    <div><FileText/></div>
+                                    <h1>Policies & Procedures</h1>
+                                    <p>Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
                             </Col>
                         </Row>
                         <Row className="mt-5">
                             <Col>
                                 <div className="main-card">
-                                    <div className="card-icons"><FileText/></div>
-                                    <h1 className="card-titles">Policies & Procedures</h1>
-                                    <p className="card-contents">Check our rules or guidelines that we need to achieve & comply.</p>
+                                    <div><FileText/></div>
+                                    <h1>Policies & Procedures</h1>
+                                    <p>Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
                             </Col>
                             <Col>
                                 <div className="main-card">
-                                    <div className="card-icons"><FileText/></div>
-                                    <h1 className="card-titles">Policies & Procedures</h1>
-                                    <p className="card-contents">Check our rules or guidelines that we need to achieve & comply.</p>
+                                    <div><FileText/></div>
+                                    <h1>Policies & Procedures</h1>
+                                    <p>Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
                             </Col>
                             <Col>
                                 <div className="main-card">
-                                    <div className="card-icons"><FileText/></div>
-                                    <h1 className="card-titles">Policies & Procedures</h1>
-                                    <p className="card-contents">Check our rules or guidelines that we need to achieve & comply.</p>
+                                    <div><FileText/></div>
+                                    <h1>Policies & Procedures</h1>
+                                    <p>Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
                             </Col>
                         </Row>
                         <Row className="mt-5">
                             <Col>
                                 <div className="main-card">
-                                    <div className="card-icons"><FileText/></div>
-                                    <h1 className="card-titles">Policies & Procedures</h1>
-                                    <p className="card-contents">Check our rules or guidelines that we need to achieve & comply.</p>
+                                    <div><FileText/></div>
+                                    <h1>Policies & Procedures</h1>
+                                    <p>Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
                             </Col>
                             <Col>
-                                <div className="main-card">
-                                    <div className="card-icons"><FileText/></div>
-                                    <h1 className="card-titles">Policies & Procedures</h1>
-                                    <p className="card-contents">Check our rules or guidelines that we need to achieve & comply.</p>
+                                <div className="main-card-last">
+                                    <div><FileText/></div>
+                                    <h1>Policies & Procedures</h1>
+                                    <p>Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
                             </Col>
-                        </Row>
-                        <   Col>
+                            <Col>
                                 <div className="box-roadmap">
                                     <h1 className="box-titles">Employee Roadmap</h1>
                                         <div className="box-containers">
@@ -158,6 +157,8 @@ const StaffEssentials = () => {
                                         <span className="box-containers5"><Search/></span> */}
                                 </div>
                             </Col>
+                        </Row>
+
                     </div>
                 </Col>
             </Row>
