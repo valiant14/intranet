@@ -1,13 +1,15 @@
 import React from "react";
 import './weatherCard.scss'
 
-const Weather = () => {
+const Weather = ({data}) => {
+    console.log(data
+        )
     return (
         <div class="widget">
             <div class="details">
-            <div class="temperature">20°</div>
+            <div class="temperature">{data.current.temp_c}°</div>
             <div class="summary">
-                <p class="summaryText">Mostly Cloudy</p>
+                <p class="summaryText">{data.current.condition.text}</p>
             </div>
             <div class="precipitation">Precipitation: 20%</div>
             <div class="wind">Wind: 3 mph</div>
