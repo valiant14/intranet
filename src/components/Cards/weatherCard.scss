@@ -56,7 +56,7 @@ $iconCloudFillSize: $iconCloudSmallDiameter * .7;
   width: $pictoBackdropDiameter;
   border-radius: 50%;
   background: linear-gradient(160deg, $bahamasAlpha 40%, $caboAlpha);
-  right: -5px;
+  right: -30px;
   top: 10px;
 }
 
@@ -67,7 +67,7 @@ $iconCloudFillSize: $iconCloudSmallDiameter * .7;
   box-shadow: 0px 50px 60px -20px $cabo;
   height: $pictoFrameDiameter;
   width: $pictoFrameDiameter;
-  right: 40px;
+  right: 17px;
   top: 55px;
 }
 
@@ -79,7 +79,7 @@ $iconCloudFillSize: $iconCloudSmallDiameter * .7;
   height: $pictoCloudBigDiameter;
   width: $pictoCloudBigDiameter;
   top: 90px;
-  right: 75px;
+  right: 53px;
 }
 .pictoCloudFill {
   position: absolute;
@@ -88,7 +88,7 @@ $iconCloudFillSize: $iconCloudSmallDiameter * .7;
   height: $pictoCloudFillSize;
   width: $pictoCloudFillSize;
   top: 132px;
-  right: 115px;
+  right: 92px;
 }
 .pictoCloudSmall {
   position: absolute;
@@ -97,7 +97,7 @@ $iconCloudFillSize: $iconCloudSmallDiameter * .7;
   height: $pictoCloudSmallDiameter;
   width: $pictoCloudSmallDiameter;
   top: 119px;
-  right: 125px;
+  right: 100px;
 }
 
 .iconCloudBig {
@@ -106,7 +106,7 @@ $iconCloudFillSize: $iconCloudSmallDiameter * .7;
   background: $cayucos;
   height: $iconCloudBigDiameter;
   width: $iconCloudBigDiameter;
-  top: 70px;
+  top: 115px;
   left: 40px;
 }
 .iconCloudSmall {
@@ -115,15 +115,15 @@ $iconCloudFillSize: $iconCloudSmallDiameter * .7;
   height: $iconCloudSmallDiameter;
   width: $iconCloudSmallDiameter;
   background: $svalbard;
-  top: 80px;
-  left:30px;
+  top: 127px;
+  left:25px;
 }
 .iconCloudFill {
   position: absolute;
   height: $iconCloudFillSize;
   width: $iconCloudFillSize;
   background: $cayucos;
-  top:88px;
+  top:134px;
   left: 40px;
 }
 
@@ -137,7 +137,7 @@ $iconCloudFillSize: $iconCloudSmallDiameter * .7;
 .temperature {
   color: white;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 4em;
 }
 .summary {
   color: $svalbard;
