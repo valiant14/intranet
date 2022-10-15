@@ -5,6 +5,7 @@ Reset
 
 ==================================================
 */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,9 +27,556 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*
+! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+*/
+
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  /* 3 */
+  tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::-webkit-backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
 
 html {
   line-height: 1;
@@ -52,6 +600,7 @@ caption, th, td {
 q, blockquote {
   quotes: none;
 }
+
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
@@ -65,7 +614,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-
 /*
 ==================================================
 
@@ -78,6 +626,7 @@ ELEMENTS
 --------------------------------------------------
 Root Element
 -------------------------------------------------- */
+
 body {
   min-width: 300px;
 }
@@ -86,14 +635,17 @@ body {
 --------------------------------------------------
 Text-Level Semantics
 -------------------------------------------------- */
+
 /* Anchors
 -------------------------------------------------- */
+
 a {
   text-decoration: none;
 }
 
 /* Modifiers
 -------------------------------------------------- */
+
 strong {
   font-weight: bold;
 }
@@ -106,6 +658,7 @@ em {
 --------------------------------------------------
 Grouping Content
 -------------------------------------------------- */
+
 p,
 dl,
 hr,
@@ -134,6 +687,7 @@ u {
 --------------------------------------------------
 Document Sections
 -------------------------------------------------- */
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -146,10 +700,12 @@ TYPOGRAPHY
 
 ==================================================
 */
+
 /*
 --------------------------------------------------
 Fonts
 -------------------------------------------------- */
+
 body {
   font: normal 100%/1.5em "Open Sans", Helvetica, Arial, sans-serif;
   color: #666;
@@ -159,6 +715,7 @@ body {
 --------------------------------------------------
 Headings
 -------------------------------------------------- */
+
 h1 {
   font-size: 2.6em;
 }
@@ -198,6 +755,7 @@ h6 {
 --------------------------------------------------
 Text and Anchors
 -------------------------------------------------- */
+
 p {
   font-family: Georgia, "Times New Roman", serif;
 }
@@ -210,6 +768,7 @@ b {
 --------------------------------------------------
 Lists
 -------------------------------------------------- */
+
 ol {
   list-style: decimal;
 }
@@ -256,6 +815,7 @@ ol ul li li {
 --------------------------------------------------
 Tables
 -------------------------------------------------- */
+
 th,
 td {
   text-align: left;
@@ -273,8 +833,10 @@ th {
 --------------------------------------------------
 Miscellaneous
 -------------------------------------------------- */
+
 /* Blockquotes
 -------------------------------------------------- */
+
 blockquote {
   border-left: 3px solid #d14414;
   background-color: #fff;
@@ -288,6 +850,7 @@ blockquote p:last-child {
 
 /* Code
 -------------------------------------------------- */
+
 pre {
   white-space: normal;
   padding: 1em 1.5em;
@@ -307,6 +870,7 @@ code {
 --------------------------------------------------
 Branding
 -------------------------------------------------- */
+
 .branding {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -316,8 +880,10 @@ Branding
 --------------------------------------------------
 Navigation
 -------------------------------------------------- */
+
 /* Global Navigation
 -------------------------------------------------- */
+
 .global-nav {
   font-size: .85em;
   font-size: .95rem;
@@ -325,6 +891,7 @@ Navigation
 
 /* Utility Navigation
 -------------------------------------------------- */
+
 #shortcuts-item,
 #utility-nav li a {
   font-size: .875em;
@@ -336,6 +903,7 @@ Navigation
 
 /* Main Navigation
 -------------------------------------------------- */
+
 .main-nav {
   font-size: .5em;
   font-weight: bold;
@@ -347,6 +915,7 @@ Navigation
 --------------------------------------------------
 Buttons
 -------------------------------------------------- */
+
 .button {
   display: inline-block;
   font: bold normal 0.75em/1 "Open Sans", Helvetica, Arial, sans-serif;
@@ -362,15 +931,18 @@ CONTENT
 
 ==================================================
 */
+
 /*
 --------------------------------------------------
 Branding
 -------------------------------------------------- */
+
 .branding {
   margin: 0;
   margin-left: 10%;
   margin-top: 1rem;
 }
+
 .branding a {
   display: block;
   padding: .6em 40px .6em;
@@ -380,22 +952,26 @@ Branding
 --------------------------------------------------
 Navigation
 -------------------------------------------------- */
+
 .global-nav,
 .main-nav {
   white-space: nowrap;
   margin: 0;
 }
+
 .global-nav ul,
 .main-nav ul {
   margin: 0;
   padding: 0;
 }
+
 .global-nav li,
 .main-nav li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .global-nav a,
 .main-nav a {
   display: block;
@@ -416,6 +992,7 @@ Navigation
   margin: 0;
   padding: 10px;
 }
+
 .main-nav ul li {
   position: relative;
   z-index: 2;
@@ -534,6 +1111,7 @@ Navigation
 
 /* Main Navigation
 -------------------------------------------------- */
+
 .main-nav {
   padding: 0;
   border-top: none;
@@ -551,6 +1129,7 @@ Navigation
 
 /* Sub Navigation
 -------------------------------------------------- */
+
 .sub-nav {
   position: relative;
   left: 0;
@@ -559,27 +1138,33 @@ Navigation
   margin-bottom: 0px;
   display: none;
 }
+
 .sub-nav a {
   color: #fff;
   color: rgba(255, 255, 255, 0.6);
   display: block;
 }
+
 .sub-nav a:hover {
   color: #fff;
 }
+
 .sub-nav li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .sub-nav .level-2 {
   margin-bottom: 0;
 }
+
 .sub-nav .level-2 > .subsection {
   display: none;
   padding: 20px;
   border-top: none!important;
 }
+
 .sub-nav .level-2 .nav-close {
   position: relative;
   display: block;
@@ -587,6 +1172,7 @@ Navigation
   margin: 0 auto;
   text-align: right;
 }
+
 .sub-nav .level-2 .nav-close a {
   position: absolute;
   right: 0;
@@ -601,19 +1187,24 @@ Navigation
   background: rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
 .sub-nav .level-2 .nav-close a:hover {
   background: rgba(0, 0, 0, 0.3);
 }
+
 .sub-nav .level-3 {
   max-width: 1080px;
   margin: 0 auto;
 }
+
 .sub-nav .level-3 h4 a {
   color: #fff;
 }
+
 .sub-nav .level-3 h4 a:hover {
   font-weight: bold;
 }
+
 .sub-nav .subsection h3 {
   max-width: 1040px;
   margin: 0 auto;
@@ -623,10 +1214,12 @@ Navigation
   display: block;
   font-size: 1.5em;
 }
+
 .sub-nav .subsection h3 a {
   color: #fff;
   padding: 0;
 }
+
 .sub-nav .subsection h3 a:hover {
   font-weight: bold;
 }
@@ -644,6 +1237,7 @@ Navigation
     margin: 0 40px;
   }
 }
+
 .nav-close.bottom {
   display: none;
 }
@@ -651,9 +1245,6 @@ Navigation
 .sub-nav .level-2 > .subsection {
   display: none;
   padding: 20px;
-}
-
-.sub-nav .level-2 > .subsection {
   border-top: none!important;
 }
 
@@ -661,6 +1252,7 @@ Navigation
   overflow: hidden;
   margin-bottom: 20px;
 }
+
 .level-3 > div h4 {
   font-size: 1em;
   padding: 0 20px;
@@ -672,6 +1264,7 @@ Navigation
   padding: 0 20px;
   font-size: .875em;
 }
+
 .level-4 > li {
   line-height: 1.2em;
   margin: .5em 0;
@@ -680,6 +1273,7 @@ Navigation
 .section-nav {
   padding-bottom: 20px;
 }
+
 .section-nav .level-4 {
   padding-bottom: 10px;
 }
@@ -688,6 +1282,7 @@ Navigation
 --------------------------------------------------
 Footer
 -------------------------------------------------- */
+
 .section-container {
   padding: 20px;
 }
@@ -800,6 +1395,7 @@ p.copyright {
 --------------------------------------------------
 Grid Items
 -------------------------------------------------- */
+
 .grid-nav {
   padding: 20px;
 }
@@ -832,7 +1428,6 @@ Grid Items
   padding: 20px;
 }
 
-
 /*
 ==================================================
 
@@ -840,6 +1435,7 @@ LAYOUT
 
 ==================================================
 */
+
 #bottom {
   padding: 20px;
 }
@@ -848,7 +1444,9 @@ LAYOUT
 --------------------------------------------------
 Clearing
 -------------------------------------------------- */
+
 /* http://www.positioniseverything.net/easyclearing.html */
+
 .global-nav ul:after,
 .main-header:after,
 .main-nav ul:after,
@@ -877,10 +1475,12 @@ COLORS
 
 ==================================================
 */
+
 /*
 --------------------------------------------------
 Typography
 -------------------------------------------------- */
+
 a {
   color: #0098c1;
 }
@@ -889,8 +1489,10 @@ a {
 --------------------------------------------------
 Backgrounds
 -------------------------------------------------- */
+
 /* Area Backgrounds
 -------------------------------------------------- */
+
 #main,
 #overview {
   background-color: #f1f1f1;
@@ -912,6 +1514,7 @@ Backgrounds
 --------------------------------------------------
 Branding
 -------------------------------------------------- */
+
 .branding a {
   color: #666;
 }
@@ -922,6 +1525,7 @@ Branding
 
 /* Navigation Backgrounds
 -------------------------------------------------- */
+
 .global-nav {
   background-color: #1E1D7A;
   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
@@ -979,6 +1583,7 @@ Branding
 
 /* Grid Items
 -------------------------------------------------- */
+
 .grid-item a {
   background: #f9f9f9;
 }
@@ -987,7 +1592,6 @@ Branding
   background: #eee;
 }
 
-
 /*
 ==================================================
 
@@ -995,6 +1599,11 @@ FORMS
 
 ==================================================
 */
+
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-style: italic;
+}
 
 ::placeholder {
   color: #ccc;
@@ -1109,7 +1718,6 @@ button:active {
   background: #0098c1;
 } */
 
-
 /*
 ==================================================
 
@@ -1122,6 +1730,7 @@ MEDIA QUERIES
 --------------------------------------------------
 Small Screens (320 pixels wide)
 -------------------------------------------------- */
+
 @media only screen and (min-width: 320px) {
   .main-nav {
     padding: 0;
@@ -1150,8 +1759,8 @@ Small Screens (320 pixels wide)
 --------------------------------------------------
 Small Screens (480 pixels wide)
 -------------------------------------------------- */
-@media only screen and (min-width: 480px) {
 
+@media only screen and (min-width: 480px) {
   #nav-directory .panel ul li {
     width: 10%;
   }
@@ -1161,8 +1770,8 @@ Small Screens (480 pixels wide)
 --------------------------------------------------
 Small Screens (600 pixels wide)
 -------------------------------------------------- */
-@media only screen and (min-width: 600px) {
 
+@media only screen and (min-width: 600px) {
   .global-nav a span {
     display: inline;
   }
@@ -1182,6 +1791,7 @@ Small Screens (600 pixels wide)
 
   /* Footer
   -------------------------------------------------- */
+
   .organization-info {
     float: left;
     width: 50%;
@@ -1211,8 +1821,8 @@ Small Screens (600 pixels wide)
 --------------------------------------------------
 Small Screens (749 pixels wide max)
 -------------------------------------------------- */
-@media only screen and (max-width: 749px) {
 
+@media only screen and (max-width: 749px) {
   #shortcuts-nav ul {
     display: none;
     position: absolute;
@@ -1245,19 +1855,19 @@ Small Screens (749 pixels wide max)
   #shortcuts-nav ul li a:active {
     background: #000;
   }
-
 }
 
 /*
 --------------------------------------------------
 Medium Screens (750 pixels wide)
 -------------------------------------------------- */
-@media only screen and (min-width: 750px) {
 
+@media only screen and (min-width: 750px) {
   /*
   --------------------------------------------------
   Default Page Structure
   -------------------------------------------------- */
+
   header,
   section,
   #supplementary,
@@ -1390,6 +2000,7 @@ Medium Screens (750 pixels wide)
 
   /* Grid
   -------------------------------------------------- */
+
   .grid-nav li {
     float: left;
     width: 25%;
@@ -1400,11 +2011,11 @@ Medium Screens (750 pixels wide)
 --------------------------------------------------
 Large Screens (980 pixels wide)
 -------------------------------------------------- */
+
 @media only screen and (min-width: 980px) {
-
-
   /* Header
   -------------------------------------------------- */
+
   .branding {
     float: left;
   }
@@ -1421,6 +2032,7 @@ Large Screens (980 pixels wide)
 
   /* Footer
   -------------------------------------------------- */
+
   .organization-info {
     float: left;
     width: 25%;
@@ -1442,6 +2054,7 @@ Large Screens (980 pixels wide)
 
   /* Grid
   -------------------------------------------------- */
+
   .grid-nav li {
     float: left;
     width: 12.5%;
@@ -1459,7 +2072,6 @@ Large Screens (980 pixels wide)
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
 }
-
 
 /*Footer*/
 
@@ -1483,6 +2095,7 @@ Large Screens (980 pixels wide)
   overflow: hidden;
   color: #ffffff;
 }
+
 .search-container{
   padding: .5rem;
   position: relative;
@@ -1544,6 +2157,7 @@ Large Screens (980 pixels wide)
   border-left: 1px solid rgb(140, 135, 135);
   margin-left: 10%;
 }
+
 .essentials-title{
   color: #0098c1;
   font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;

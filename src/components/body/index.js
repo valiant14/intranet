@@ -4,7 +4,7 @@ import Features from './features/index'
 import UpcomingEvents from './upcomingEvents/index'
 import Documents from './documents/index'
 import StaffAnnouncement from './staffAnnouncements/index'
-import Weather from './weather/index'
+import Weathers from './weather/index'
 import { Row, Col } from 'react-bootstrap';
 
 const ContentView = () => {
@@ -21,7 +21,7 @@ const ContentView = () => {
                 </Col>
                 <Col>
                     <StaffAnnouncement />
-                    <Weather />
+                    <Weathers />
                 </Col>
             </Row>
         </div>

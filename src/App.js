@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
 import React from 'react';
+import {Row, Col} from 'react-bootstrap'
 //components
 import Home from './View/Home/index'
 import Aboutus from './View/AboutUs/aboutUs';
@@ -50,18 +51,28 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Layout />
-        <Routes>
-            <Route exact path='/' element={< Home />}></Route>
-            <Route exact path='/about' element={< Aboutus />}></Route>
-            <Route exact path='/news&events' element={< Newevents />}></Route>
-            <Route exact path='/staffEssentials' element={< StaffEssentials data={data}/>}></Route>
-            <Route exact path='/contacts' element={< Contacts />}></Route>
-            <Route exact path='/departments' element={< Departments />}></Route>
-            <Route exact path='/sendyourfeedback' element={< Feedbacks />}></Route>
-            <Route exact path='/staffEssentials/forms' element={< Forms data={data}/>}></Route>
-        </Routes>
-      <Footer/>
+      <Row>
+        <Col>
+          <Row>
+            <Layout />
+          </Row>
+          <Row className='mb-5'>
+            <Col>
+              <Routes>
+                  <Route exact path='/' element={< Home />}></Route>
+                  <Route exact path='/about' element={< Aboutus />}></Route>
+                  <Route exact path='/news&events' element={< Newevents />}></Route>
+                  <Route exact path='/staffEssentials' element={< StaffEssentials data={data}/>}></Route>
+                  <Route exact path='/contacts' element={< Contacts />}></Route>
+                  <Route exact path='/departments' element={< Departments />}></Route>
+                  <Route exact path='/sendyourfeedback' element={< Feedbacks />}></Route>
+                  <Route exact path='/staffEssentials/forms' element={< Forms data={data}/>}></Route>
+              </Routes>
+            </Col>
+          </Row>
+          <Footer/>
+        </Col>
+      </Row>
     </BrowserRouter>  
   );
 }
