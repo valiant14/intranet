@@ -4,26 +4,30 @@
     width: fit-content;
 
     p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-indent: 50px;
+        color: rgb(140, 135, 135);
     }
 }
 
 .title-about {
+    font-family: Microsoft Sans Serif;
     color: #1E1D7A;
     text-transform: uppercase;
 }
 
 .title-seder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #0098c1;
     margin-top: 1rem;
 }
 
-.cover-about {
-    background-image: url('../../../assets/seder.png');
-    background-size: cover;
-    background-position: center;
-    border: 2px solid black;
-    height: 300px;
-    width: 300px;
-    z-index: 0;
-}
+// .cover-about {
+//     background-image: url('../../../assets/seder.png');
+//     background-size: cover;
+//     background-position: center;
+//     border: 2px solid black;
+//     height: 300px;
+//     width: 300px;
+//     z-index: 0;
+// }

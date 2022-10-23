@@ -3,7 +3,26 @@ import {Col, Row, Card, InputGroup,Form} from 'react-bootstrap'
 import { Sidebar, Menu, MenuItem, SubMenu,useProSidebar } from 'react-pro-sidebar';
 import CardView from '../StaffEssentials/Card/index'
 import { Search,FileText, ArrowUpRight, Users,BarChart2, DollarSign, LogOut,Flag } from 'react-feather';
+// import ExamplePDFViewer from '../StaffEssentials/pdf/index'
+import Fleet from '../../assets/PDF/FLEET.pdf'
+
 const StaffEssentials = () => {
+
+
+        const onButtonClick = () => {
+            fetch('../../assets/PDF/FLEET.pdf').then(response => {
+                response.blob().then(blob => {
+                    const fileURL = window.URL.createObjectURL(blob);
+                    let alink = document.createElement('a');
+                    alink.href = fileURL;
+                    alink.download = 'SamplePDF.pdf';
+                    alink.click();
+                })
+            })
+            return (
+                <a href={Fleet}>Down</a>
+            )
+        }
 
     return (
         // <Row>
@@ -65,11 +84,14 @@ const StaffEssentials = () => {
                                 </div>
                             </Col>
                             <Col>
+                            <a href={Fleet} download="Car exchange, purchase and rental policy">
                                 <div className="main-card">
-                                    <div><FileText/></div>
+                                    <div><FileText/>
+                                    </div>
                                     <h1>Policies & Procedures</h1>
                                     <p>Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
+                            </a>
                             </Col>
                             <Col>
                                 <div className="main-card">
@@ -157,8 +179,9 @@ const StaffEssentials = () => {
                                         <span className="box-containers5"><Search/></span> */}
                                 </div>
                             </Col>
+                            {/* <ExamplePDFViewer/> */}
                         </Row>
-
+                                    {Fleet}
                     </div>
                 </Col>
             </Row>
