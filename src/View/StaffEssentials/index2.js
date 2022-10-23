@@ -5,6 +5,9 @@ import CardView from '../StaffEssentials/Card/index'
 import { Search,FileText, ArrowUpRight, Users,BarChart2, DollarSign, LogOut,Flag } from 'react-feather';
 // import ExamplePDFViewer from '../StaffEssentials/pdf/index'
 import Fleet from '../../assets/PDF/FLEET.pdf'
+import IT from '../../assets/PDF/IT.pdf'
+import SIM from '../../assets/PDF/SIM.pdf'
+import HR from '../../assets/PDF/HR.pdf'
 
 const StaffEssentials = () => {
 
@@ -77,11 +80,13 @@ const StaffEssentials = () => {
                     <div className="main-container">
                         <Row>
                             <Col>
+                            <a href={HR} download="HR policy">
                                 <div className="main-card hoverM3">
                                     <div><FileText/></div>
                                     <h1>Policies & Procedures</h1>
                                     <p>Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
+                            </a>
                             </Col>
                             <Col>
                             <a href={Fleet} download="Car exchange, purchase and rental policy">
