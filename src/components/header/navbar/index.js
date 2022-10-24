@@ -1,22 +1,34 @@
 import React from "react";
 import { Row, Col,Dropdown,NavDropdown  } from 'react-bootstrap';
 import { Settings,Smartphone,Link,Briefcase } from 'react-feather';
+import './index.scss'
+
 const Navbar = () => {
     return (
         <Row>
-            <nav id="global-nav" class="global-nav" role="navigation">
+            <nav className="global-navs" role="navigation">
                 <ul >
                     <li>
-                    <a href="Settings"><span><Settings /></span>&nbsp;Settings</a>
+                    <p><span><Settings /></span>&nbsp;Settings</p>
                     </li>
                     <li>
-                    <a href="Apps"><span><Smartphone/></span>&nbsp;Apps</a>
+                    {/* <a href="Apps"><span><Smartphone/></span>&nbsp;Apps</a> */}
+                    <Dropdown>
+                    <Dropdown.Toggle className="itemList">
+                    <span><Smartphone/></span>&nbsp;Apps
+                    </Dropdown.Toggle>
+                        <Dropdown.Menu className="itemMenu">
+                            <Dropdown.Item href="https://sedergroup.operations.dynamics.com" target="_blank">D365</Dropdown.Item>
+                            <Dropdown.Item href="https://usnconeboxax1aos.cloud.onebox.dynamics.com" target="_blank">UAT1</Dropdown.Item>
+                            <Dropdown.Item href="https://outlook.office.com/mail/" target="_blank">Outlook</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                     </li>
                     <li>
-                    <a href="Mylinks"><span><Link/></span>&nbsp;My links</a>
+                    <p><span><Link/></span>&nbsp;My links</p>
                     </li>
                     <li>
-                    <a aria-current="page" href="WorkSpaces"><span><Briefcase/></span>&nbsp;WorkSpaces</a>
+                    <p><span><Briefcase/></span>&nbsp;WorkSpaces</p>
                     </li>
                 </ul>
                 </nav>

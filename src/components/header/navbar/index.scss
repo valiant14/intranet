@@ -1,0 +1,56 @@
+.global-navs {
+    background-color: #1E1D7A;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    padding: .2rem;
+    height: 4rem;
+    font-size: .85em;
+    font-size: .95rem;
+    white-space: nowrap;
+    margin: 0;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        color: #1E1D7A;
+    }
+
+    li {
+        list-style: none;
+        float: right;
+        margin-right: 30px;
+        margin-top: 5px;
+    }
+
+    a {
+        display: block;
+        padding: .9em;
+        color: black;
+    }
+
+    &:hover a {
+        background-color: transparent;
+    }
+
+    p {
+        font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+        display: block;
+        padding: .9em;
+        color: #fff;
+    }
+
+}
+
+.itemList {
+    background-color: transparent;
+    border: none;
+    &:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+}
+
+.itemMenu {
+    color: #1E1D7A;
+    
+}
+
