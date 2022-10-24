@@ -70,7 +70,12 @@ function App() {
               </Routes>
             </Col>
           </Row>
-          <Footer/>
+          <Row>
+            <Col>
+              <Footer/>
+            </Col>
+          </Row>
+
         </Col>
       </Row>
     </BrowserRouter>  

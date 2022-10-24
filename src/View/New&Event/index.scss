@@ -1,7 +1,91 @@
-.new-image {
-    justify-content: center;
-    align-items: center;
+.eventContainer {
+    // justify-content: center;
+    // align-items: center;
+    margin-left: 10rem;
+    margin-top: 5rem;
     display: flex;
     position: relative;
     padding: 1rem;
+    height: 100vh;
+
+    p {
+        margin-top: 1rem;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        color: rgb(140, 135, 135);
+        width: 450px;
+    }
+}
+
+.eventItems {
+    width: 450px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+    -webkit-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+    -moz-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+}
+
+.eventsTitle {
+    font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    font-size: 30px;
+    color: #1E1D7A;
+    
+}
+
+.subTitle {
+    font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 23px;
+    margin-top: 2rem;
+    color: rgb(77, 72, 72);
+    width: 445px;
+    // border-bottom: 1px solid #1E1D7A;
+
+    &:hover {
+        cursor: pointer;
+        color: #1E1D7A;
+    }
+}
+
+.cardContainer {
+    background-color: #fff;
+    width: 500px;
+    padding: 1.6rem;
+    height: 50rem;
+    box-shadow: -12px 12px 37px -11px rgba(0,0,0,0.62);
+    -webkit-box-shadow: -12px 12px 37px -11px rgba(0,0,0,0.62);
+    -moz-box-shadow: -12px 12px 37px -11px rgba(0,0,0,0.62);
+}
+
+.cardFooter {
+    border-top: 1px solid black;
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    width: 445px;
+    margin-top: 2rem;
+
+    Button {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        
+        background-color: #0098c1;
+        box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+        -webkit-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+        -moz-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+    }
+
+    &:hover Button {
+        background-color: #1E1D7A;
+        box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+        -webkit-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+        -moz-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+    }
 }
