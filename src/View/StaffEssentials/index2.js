@@ -83,7 +83,17 @@ const StaffEssentials = () => {
                             <a href={HR} download="HR policy">
                                 <div className="main-card hoverM3">
                                     <div><FileText/></div>
-                                    <h1>Policies & Procedures</h1>
+                                    <h1>HR Policies</h1>
+                                    <p>This regulation was drawn up,in implementation of thirteen work system,
+                                       Issued by the Royal Decree No. (M/15) and dated 08/32/5231.</p>
+                                </div>
+                            </a>
+                            </Col>
+                            <Col>
+                            <a href={IT} download="Desktop Computers and Laptop Policy">
+                                <div className="main-card">
+                                    <div><FileText/></div>
+                                    <h1>Desktop and Laptop</h1>
                                     <p>Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
                             </a>
@@ -93,21 +103,24 @@ const StaffEssentials = () => {
                                 <div className="main-card">
                                     <div><FileText/>
                                     </div>
-                                    <h1>Policies & Procedures</h1>
+                                    <h1>Car Rental Policy</h1>
                                     <p>Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
                             </a>
                             </Col>
-                            <Col>
-                                <div className="main-card">
-                                    <div><FileText/></div>
-                                    <h1>Policies & Procedures</h1>
-                                    <p>Check our rules or guidelines that we need to achieve & comply.</p>
-                                </div>
-                            </Col>
+
                         </Row>
                         <Row className="mt-5">
                             <Col>
+                            <a href={SIM} download="Internet Sim policy">
+                                <div className="main-card">
+                                    <div><FileText/></div>
+                                    <h1>Internet Sim Policy</h1>
+                                    <p>Check our rules or guidelines that we need to achieve & comply.</p>
+                                </div>
+                            </a> 
+                            </Col>
+                            {/* <Col>
                                 <div className="main-card">
                                     <div><FileText/></div>
                                     <h1>Policies & Procedures</h1>
@@ -120,16 +133,9 @@ const StaffEssentials = () => {
                                     <h1>Policies & Procedures</h1>
                                     <p>Check our rules or guidelines that we need to achieve & comply.</p>
                                 </div>
-                            </Col>
-                            <Col>
-                                <div className="main-card">
-                                    <div><FileText/></div>
-                                    <h1>Policies & Procedures</h1>
-                                    <p>Check our rules or guidelines that we need to achieve & comply.</p>
-                                </div>
-                            </Col>
+                            </Col> */}
                         </Row>
-                        <Row className="mt-5">
+                        {/* <Row className="mt-5">
                             <Col>
                                 <div className="main-card">
                                     <div><FileText/></div>
@@ -177,16 +183,9 @@ const StaffEssentials = () => {
                                             <span><Flag/></span>
                                             <div><ArrowUpRight/></div>
                                         </div>
-                                        {/* <span className="box-containers1"><Search/></span>
-                                        <span className="box-containers2"><Search/></span>
-                                        <span className="box-containers3"><Search/></span>
-                                        <span className="box-containers4"><Search/></span>
-                                        <span className="box-containers5"><Search/></span> */}
                                 </div>
                             </Col>
-                            {/* <ExamplePDFViewer/> */}
-                        </Row>
-                                    {Fleet}
+                        </Row> */}
                     </div>
                 </Col>
             </Row>

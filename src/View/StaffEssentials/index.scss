@@ -233,7 +233,7 @@
 }
 
 .main-card {
-  height: 230px;
+  height: 250px;
   width: 195px;
   background-color: rgb(255, 253, 253);
   /* border: 1px solid #333; */
@@ -246,6 +246,7 @@
   -moz-box-shadow: 10px 10px 23px -11px rgba(0,0,0,0.63);
   margin-top: 2%;
   cursor: pointer;
+  overflow: hidden;
 
   div {
     width: 100px;
@@ -257,6 +258,7 @@
     transform: scale(1.5,1.5);
     padding: 1rem;
     margin-top: 10%;
+
   }
 
   h1 {
@@ -276,7 +278,7 @@
     color: rgb(140, 135, 135);
     padding: 1rem;
     margin-top: -5%;
-    font-size: 13px;
+    font-size: 12px;
   }
 
   &:hover {
@@ -306,7 +308,6 @@
   height: 230px;
   width: 195px;
   background-color: rgb(255, 253, 253);
-  /* border: 1px solid #333; */
   border-top: 1px solid rgb(204, 198, 198);
   border-left: 1px solid rgb(204, 198, 198);
   translate: -6.5rem -9rem;
@@ -316,6 +317,8 @@
   -moz-box-shadow: 10px 10px 23px -11px rgba(0,0,0,0.63);
   margin-top: 2%;
   cursor: pointer;
+
+
   div {
     width: 100px;
     translate: 45%;
@@ -326,6 +329,7 @@
     transform: scale(1.5,1.5);
     padding: 1rem;
     margin-top: 10%;
+
   }
 
   h1 {
@@ -345,7 +349,7 @@
     color: rgb(140, 135, 135);
     padding: 1rem;
     margin-top: -5%;
-    font-size: 13px;
+    font-size: 12px;
   }
 
   &:hover {
@@ -371,6 +375,7 @@
   }
 
 }
+
 
 .box-roadmap {
   box-sizing: border-box;
