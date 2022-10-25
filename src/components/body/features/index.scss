@@ -1,0 +1,22 @@
+.ceoImage {
+    height: 200px;
+    position: relative;
+    margin-right: .3rem;
+    margin-left: -.75rem;
+    margin-bottom: -1.9rem;
+    box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+    -webkit-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+    -moz-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+}
+
+.titles {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contentTitles {
+    font-size: 18px;
+    color: #333;
+    word-wrap: normal;
+}

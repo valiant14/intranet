@@ -7,7 +7,7 @@ import Welcome from '../../components/welcome/index'
 import Footer from '../../components/footer/index'
 import Chatbox from '../../components/chatbox/Avatar/chatbox'
 import Avatar from '../../components/chatbox/Avatar/avatar'
-
+import CeoAbout from '../../components/body/AboutCeo/Ceo'
 
 function Home() {
 
@@ -37,6 +37,11 @@ function Home() {
           <Welcome />
         </Col>
       </Row>
+      {/* <Row>
+        <Col>
+          <CeoAbout />
+        </Col>
+      </Row> */}
       <Row className='mt-5'>
         <Col className='mt-5'>
         <ContentView />

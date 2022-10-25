@@ -1,53 +1,20 @@
 import React from 'react'
-
-
+import ceo from '../../../assets/images/ceo1.png'
+import './index.scss'
 const Features = () => {
   return (
     <>
         <div class="card border-dark mb-3">
             <div class="card-header">Features</div>
-                 <div class="drop__card">
-                    <div class="drop__data">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="" class="drop__img"/>
+                 <div className="drop__card">
+                    <div className="drop__data">
+                        <img src={ceo} alt="" className="ceoImage"/>
                     <div>
-                        <h1 class="drop__name">New Update on AX</h1>
-                        <span class="drop__profession">Sep 26, 2022 2:00 PM</span>
-                    </div>
-                    </div>
-                 </div>
-                 <div class="drop__card">
-                    <div class="drop__data">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=046c29138c1335ef8edee7daf521ba50" alt="" class="drop__img"/>
-                    <div>
-                        <h1 class="drop__name">Agreement with STC renewed</h1>
-                        <span class="drop__profession">Sep 26, 2022 2:00 PM</span>
-                    </div>
-                    </div>
-                 </div>
-                 <div class="drop__card">
-                    <div class="drop__data">
-                        <img src="https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg" alt="" class="drop__img"/>
-                    <div>
-                        <h1 class="drop__name">Seder Hit the Jackpot with new 1B</h1>
-                        <span class="drop__profession">Sep 26, 2022 2:00 PM</span>
-                    </div>
-                    </div>
-                 </div>
-                 <div class="drop__card">
-                    <div class="drop__data">
-                        <img src="https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ" alt="" class="drop__img"/>
-                    <div>
-                        <h1 class="drop__name">Seder Adopts Paperless</h1>
-                        <span class="drop__profession">Sep 26, 2022 2:00 PM</span>
-                    </div>
-                    </div>
-                 </div>
-                 <div class="drop__card">
-                    <div class="drop__data">
-                        <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="" class="drop__img"/>
-                    <div>
-                        <h1 class="drop__name">A Message from CEO</h1>
-                        <span class="drop__profession">Sep 26, 2022 2:00 PM</span>
+                        <h1 className="titles">About CEO</h1>
+                          <h1 className="contentTitles">Experienced Chief Executive Officer with 20 years of experience with a demonstrated history of working in
+                          different industries mainly ICT. Skilled in leadership, building strategies, management, communications, and
+                          business development.</h1>
+                        <span className="drop__profession">Sep 26, 2022 2:00 PM</span>
                     </div>
                     </div>
                  </div>
