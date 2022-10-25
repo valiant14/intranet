@@ -9,12 +9,15 @@
     height: 100vh;
 
     p {
+        font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-align: justify;
         margin-top: 1rem;
         justify-content: center;
         display: flex;
         align-items: center;
         color: rgb(140, 135, 135);
         width: 450px;
+        font-size: 15px;
     }
 }
 
@@ -22,6 +25,7 @@
     width: 450px;
     justify-content: center;
     display: flex;
+    margin-top: 1rem;
     align-items: center;
     z-index: 1;
     box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
@@ -30,32 +34,37 @@
 }
 
 .eventsTitle {
+    margin-top: 2rem;
+    margin-left: 11rem;
+    padding: 1rem;
+    position: absolute;
+    border-radius: 1rem;
+    background-color: #1E1D7A;
+    color: #fff;
+    display: flex;
     font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 500px;
     margin-bottom: 1rem;
-    font-size: 30px;
-    color: #1E1D7A;
-    
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
 .subTitle {
     font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 23px;
     margin-top: 2rem;
-    color: rgb(77, 72, 72);
+    color: #1E1D7A;
     width: 445px;
-    // border-bottom: 1px solid #1E1D7A;
-
-    &:hover {
-        cursor: pointer;
-        color: #1E1D7A;
-    }
 }
 
 .cardContainer {
     background-color: #fff;
+    border-radius: 1rem;
+    margin-top: 2rem;
     width: 500px;
     padding: 1.6rem;
-    height: 42rem;
+    height: 37rem;
     box-shadow: -12px 12px 37px -11px rgba(0,0,0,0.62);
     -webkit-box-shadow: -12px 12px 37px -11px rgba(0,0,0,0.62);
     -moz-box-shadow: -12px 12px 37px -11px rgba(0,0,0,0.62);

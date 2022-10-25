@@ -16,8 +16,8 @@ const Newevents = () => {
     }
     return (
         <React.Fragment>
-            <Row className="eventContainer">
             <h1 className="eventsTitle">Events</h1>
+            <Row className="eventContainer">
                 <div className="cardContainer">
                     <Col  sm={4}>
 
@@ -71,12 +71,9 @@ const Newevents = () => {
                             </Carousel>
                         </div>
                         <div>
-                        <a href={events} download="Event"><h1 className="subTitle">SederGroup Awarding 2022</h1></a>
+                        <a href={events} download="Event"><h1 className="subTitle">2022 Honoring Ceremony</h1></a>
                             <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            &emsp;Our CEO, His Excellency Loai Alammar extend his thanks and appreciation to Mr. Abdulaziz al Moqbel, Mr. Saleh al Dhalan and Abdulrahman al Yahya thru the period of their work in Seder Group company. Ceremony held in Hilton Hotel last October 9, 2022 at 8:00pm.
                             </p>
                             <div className="cardFooter">
                                 <a href={events} download="Event"><img src="https://www.iconpacks.net/icons/2/free-pdf-download-icon-2617-thumb.png" width="30px"></img><h1 className="downloadS">Download</h1></a>

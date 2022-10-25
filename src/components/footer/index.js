@@ -24,7 +24,7 @@ const Footer = () => {
                     <br></br>
                     <span >Phone:</span><span>&nbsp;460-6666</span>
                     <br></br>
-                    <span >Copyrights: SEDER GROUP</span>
+                    <span >Copyrights: IT Department</span>
                 </p>
               </Col>
             </Row>

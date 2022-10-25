@@ -14,7 +14,7 @@ const Weather = ({data}) => {
                 <div class="summary">
                     <p class="summaryText">{item.condition.text}</p>
                 </div>
-                <div class="precipitation">Precipitation: {item.daily_will_it_rain}%</div>
+                <div class="precipitation">Location: Riyadh</div>
                 <div class="wind">Wind: {item.maxwind_mph} mph</div>
                 </div>
                 <div class="pictoBackdrop"></div>
