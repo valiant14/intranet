@@ -79,7 +79,7 @@ const Newevents = () => {
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                             <div className="cardFooter">
-                                <Button onClick={downloads}><span><Download /></span>&nbsp;&nbsp;Download</Button>
+                                <a href={events} download="Event"><img src="https://www.iconpacks.net/icons/2/free-pdf-download-icon-2617-thumb.png" width="30px"></img><h1 className="downloadS">Download</h1></a>
                             </div>
                         </div>
                     </Col>
