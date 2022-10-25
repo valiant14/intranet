@@ -13,10 +13,10 @@ const Navigations = () => {
             <Col>
             <Row>
                 <Col sm={1}>
-                    <img src={seder} width="100" height="100" className='mt-2 mb-2'/>
+                    <img src={seder} width="100" height="100" className='mt-3 mb-3'/>
                 </Col>
                 <Col>
-                    <nav role="navigation" className="main-nav justify-content-end">
+                    <nav role="navigation" className="main-nav justify-content-end mt-3 mb-1">
                         <ul>
                             <li>
                                 <Link to="/">Home</Link>

@@ -1,13 +1,15 @@
 .global-navs {
     background-color: #1E1D7A;
-    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+    -webkit-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+    -moz-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
     padding: .2rem;
     height: 4rem;
     font-size: .85em;
     font-size: .95rem;
     white-space: nowrap;
     margin: 0;
-
+    
     ul {
         margin: 0;
         padding: 0;
@@ -47,6 +49,7 @@
         background-color: transparent;
         color: #fff;
     }
+    
 }
 
 .itemMenu {

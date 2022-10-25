@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+$morro: #FFAE6D;
+$cayucos: #E3C770;
+$bahamas: #F3E0B5;
+$capetown: #FECD70;
+$cabo: #FFAE6D;
+$reynisfjara: #34373e;
+$svalbard: #d2e9fa;
+
+$bahamasAlpha: rgba($bahamas, 0.7);
+$caboAlpha: rgba($cabo, 0.6);
+
+$capetownShadow: rgba($capetown, 0.4);
+
+$widgetHeight: 300px;
+$pictoBackdropDiameter: $widgetHeight * .8;
+$pictoFrameDiameter: $pictoBackdropDiameter * .6;
+$pictoCloudBigDiameter: $pictoFrameDiameter * .5;
+$pictoCloudSmallDiameter: $pictoCloudBigDiameter * .6;
+$pictoCloudFillSize: $pictoCloudSmallDiameter * .7;
+$iconCloudBigDiameter: 36px;
+$iconCloudSmallDiameter: $iconCloudBigDiameter * .7;
+$iconCloudFillSize: $iconCloudSmallDiameter * .7;
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+// body {
+//   background: #CEF;
+// }
+
+// .container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 98vh;
+// }
+
+.widget-sunny {
+  background: linear-gradient(to bottom right, $bahamas 20%, $cabo);
+  width: 450px;
+  height: $widgetHeight;
+  border-radius: 6px;
+  box-shadow: 0px 60px 80px -20px $capetownShadow;
+  position: relative;
+  overflow: hidden;
+}
+
+.pictoBackdrop {
+  position: absolute;
+  height: $pictoBackdropDiameter;
+  width: $pictoBackdropDiameter;
+  border-radius: 50%;
+  background: linear-gradient(160deg, $bahamasAlpha 40%, $caboAlpha);
+  right: -30px;
+  top: 10px;
+}
+
+.pictoFrame {
+  position: absolute;
+  background: $reynisfjara;
+  border-radius: 50%;
+  box-shadow: 0px 50px 60px -20px $cabo;
+  height: $pictoFrameDiameter;
+  width: $pictoFrameDiameter;
+  right: 17px;
+  top: 55px;
+}
+
+.pictoCloudBig {
+  position: absolute;
+  border-radius: 50%;
+  background: $morro;
+  box-shadow: 20px 20px 80px -20px $morro;
+  height: $pictoCloudBigDiameter;
+  width: $pictoCloudBigDiameter;
+  top: 90px;
+  right: 53px;
+}
+.pictoCloudFill {
+  position: absolute;
+  background: $morro;
+  box-shadow: 0px 20px 80px -20px $morro;
+  height: $pictoCloudFillSize;
+  width: $pictoCloudFillSize;
+  top: 132px;
+  right: 92px;
+}
+.pictoCloudSmall {
+  position: absolute;
+  border-radius: 50%;
+  background: $svalbard;
+  height: $pictoCloudSmallDiameter;
+  width: $pictoCloudSmallDiameter;
+  top: 119px;
+  right: 100px;
+}
+
+.iconCloudBig {
+  position: absolute;
+  border-radius: 50%;
+  background: $cayucos;
+  height: $iconCloudBigDiameter;
+  width: $iconCloudBigDiameter;
+  top: 115px;
+  left: 40px;
+}
+.iconCloudSmall {
+  position: absolute;
+  border-radius: 50%;
+  height: $iconCloudSmallDiameter;
+  width: $iconCloudSmallDiameter;
+  background: $svalbard;
+  top: 127px;
+  left:25px;
+}
+.iconCloudFill {
+  position: absolute;
+  height: $iconCloudFillSize;
+  width: $iconCloudFillSize;
+  background: $cayucos;
+  top:134px;
+  left: 40px;
+}
+
+.details{
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left:20px;
+}
+.temperature {
+  color: white;
+  font-weight: 300;
+  font-size: 4em;
+}
+.summary {
+  color: $svalbard;
+  font-size: 1.5em;
+  font-weight: 300;
+  width: 260px;
+  margin-top: -8px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid $cayucos;
+  margin-left: 8px;
+}
+.summaryText {
+  margin: 0;
+  margin-left: 56px;
+}
+.precipitation, .wind {
+  color: $svalbard;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-left: 8px;
+}
+.precipitation {
+  margin-top: 16px;
+}
+.wind {
+  margin-top: 4px;
+}

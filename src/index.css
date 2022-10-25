@@ -80,6 +80,10 @@ Root Element
 -------------------------------------------------- */
 body {
   min-width: 300px;
+  background-image: url(../src/assets/background/bg6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 999;
 }
 
 /*
@@ -321,6 +325,7 @@ Navigation
 .global-nav {
   font-size: .85em;
   font-size: .95rem;
+  
 }
 
 /* Utility Navigation
@@ -333,6 +338,7 @@ Navigation
   padding-top: .6em;
   padding-bottom: 1.1em;
 }
+
 
 /* Main Navigation
 -------------------------------------------------- */
@@ -971,7 +977,7 @@ Branding
 }
 
 .main-nav a {
-  color: #444;
+  color: #222;
 }
 
 .main-nav li.active a,
@@ -1416,7 +1422,7 @@ Large Screens (980 pixels wide)
   }
 
   .main-nav {
-    font-size: .85em;
+    font-size: .90em;
     float: right;
     border-top: none;
   }
@@ -1488,6 +1494,9 @@ Large Screens (980 pixels wide)
   padding: 9rem;
   overflow: hidden;
   color: #ffffff;
+  box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+  -webkit-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+  -moz-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
 }
 .search-container{
   padding: .5rem;

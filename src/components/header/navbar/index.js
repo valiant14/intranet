@@ -8,9 +8,9 @@ const Navbar = () => {
         <Row>
             <nav className="global-navs" role="navigation">
                 <ul >
-                    <li>
+                    {/* <li>
                     <p><span><Settings /></span>&nbsp;Settings</p>
-                    </li>
+                    </li> */}
                     <li>
                     {/* <a href="Apps"><span><Smartphone/></span>&nbsp;Apps</a> */}
                     <Dropdown>
@@ -24,12 +24,12 @@ const Navbar = () => {
                         </Dropdown.Menu>
                     </Dropdown>
                     </li>
-                    <li>
+                    {/* <li>
                     <p><span><Link/></span>&nbsp;My links</p>
                     </li>
                     <li>
                     <p><span><Briefcase/></span>&nbsp;WorkSpaces</p>
-                    </li>
+                    </li> */}
                 </ul>
                 </nav>
         </Row>
