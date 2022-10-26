@@ -11,7 +11,7 @@ import Avatar from '../../components/chatbox/Avatar/avatar'
 import CeoAbout from '../../components/body/AboutCeo/Ceo'
 import UpcomingEvents from '../../components/body/upcomingEvents/index'
 import Events from '../../components/body/events';
-
+import Weathers from '../../components/body/weather';
 function Home() {
 
 
@@ -40,49 +40,52 @@ function Home() {
           <Welcome />
         </Col>
       </Row>
-      {/* <Row>
-        <Col>
-          <CeoAbout />
-        </Col>
-      </Row> */}
       <Row className='mt-5'>
-        <Col sm={9}>
+        <Col sm={8}>
           <h1 className='upcomingEvent'>UPCOMING EVENTS</h1>
           <div className='eventContainers'>
             <Events/>
             <UpcomingEvents/>
           </div>
           </Col>
-          <Col sm={3}>
-          <h1 className='docTitles'>COMPANY POLICY</h1>
-          <div className='DocumentContainer'>
-            <div className='Documents'>
-              <div className='DocumentsSub'></div>
-              <div className='SubTitles'>
-                <p>Human Resources</p>
-              </div>
-            </div>
-            <div className='Documents'>
-              <div className='DocumentsSub'></div>
-                <div className='SubTitles'>
-                  <p>IT Department</p>
+          <Col sm={4}>
+          {/* <Row>
+            <Col>
+              <Weathers />
+            </Col>
+          </Row> */}
+            <Row>
+              <h1 className='docTitles'>COMPANY POLICY</h1>
+              <div className='DocumentContainer'>
+                <div className='Documents'>
+                  <div className='DocumentsSub'></div>
+                  <div className='SubTitles'>
+                    <p>Human Resources</p>
+                  </div>
                 </div>
-            </div>
-          </div>
-          <div className='DocumentContainer'>
-            <div className='Documents'>
-            <div className='DocumentsSub'></div>
-              <div className='SubTitles'>
-                <p>Car and Rentals</p>
+                <div className='Documents'>
+                  <div className='DocumentsSub'></div>
+                    <div className='SubTitles'>
+                      <p>IT Department</p>
+                    </div>
+                </div>
               </div>
-            </div>
-            <div className='Documents'>
-            <div className='DocumentsSub'></div>
-              <div className='SubTitles'>
-                <p>Internet SIM</p>
+              <div className='DocumentContainer'>
+                <div className='Documents'>
+                <div className='DocumentsSub'></div>
+                  <div className='SubTitles'>
+                    <p>Car and Rentals</p>
+                  </div>
+                </div>
+                <div className='Documents'>
+                <div className='DocumentsSub'></div>
+                  <div className='SubTitles'>
+                    <p>Internet SIM</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+          </Row>
+
         </Col>
 
         </Row>

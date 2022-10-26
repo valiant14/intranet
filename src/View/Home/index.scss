@@ -14,12 +14,12 @@
     column-count: 2;
 }
 .docTitles {
+    display: flex;
+    justify-content: center;
     padding: 1rem;
-    margin-right: 10%;
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     color: #222;
-    margin-left: 7%;
 }
 
 .news {
@@ -33,6 +33,7 @@
 .DocumentContainer {
     display: flex;
     justify-content: center;
+    margin-left: 10%;
     gap: 10px;
     width: 80%;
     height: 15vh;
@@ -40,7 +41,7 @@
     margin-bottom: .75rem;
 }
 .Documents {
-    width: 40%;
+    width: 30%;
     height: 100%;
     background-color: #fff;
     z-index: -1;
@@ -66,8 +67,8 @@
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwJ52Cc_eRfIyYcxuHsXgmalq2xi2Ey1Z7wA&usqp=CAU');
     background-size: cover;
     -moz-box-sizing: content-box;
--webkit-box-sizing: content-box;
-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 .SubTitles {

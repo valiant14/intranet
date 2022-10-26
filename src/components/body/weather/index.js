@@ -1,7 +1,7 @@
 import React from 'react'
 import Weather from '../../Cards/weatherCard'
 import axios from 'axios';
-
+import './index.scss'
 const Weathers = () => {
   const [data, setData] = React.useState([]);
 
@@ -32,6 +32,7 @@ const Weathers = () => {
 
   return (
     <>
+      <h1 className='weatherTitle'>Weather</h1>
       <Weather data={data}/>
     </>
   )
