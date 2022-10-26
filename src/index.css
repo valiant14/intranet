@@ -80,10 +80,11 @@ Root Element
 -------------------------------------------------- */
 body {
   min-width: 300px;
-  background-image: url(../src/assets/background/bg6.jpg);
+  /* background-image: url(../src/assets/background/bg6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 999;
+  opacity: 999; */
+  background-color: #fff;
 }
 
 /*
@@ -347,6 +348,11 @@ Navigation
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .1em;
+}
+
+.mainNav{
+  background-image: url(../src/assets/background/bg6.jpg);
+  
 }
 
 /*
@@ -1483,21 +1489,7 @@ Large Screens (980 pixels wide)
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
-.welcome-container {
-  justify-content: center;
-  text-align: center;
-  background-color: #235090;
-  background-image: url(../src/assets/banner.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 40vh;
-  padding: 9rem;
-  overflow: hidden;
-  color: #ffffff;
-  box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
-  -webkit-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
-  -moz-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
-}
+
 .search-container{
   padding: .5rem;
   position: relative;

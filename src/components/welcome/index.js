@@ -1,13 +1,13 @@
 import React from "react";
-import Image from '../../assets/banner.jpg'
+import './index.scss'
 
 const Welcome = () => {
     return (
         <>
-        <div class="welcome-container">
+        <div className="welcome-container">
             <div>
-                <h4 class="display-6">Welcome to our digital headquarter</h4>
-                <p class="lead">We are ready to help you get through your working day with ease.</p>
+                <h1>Welcome to our digital headquarter</h1>
+                <p>We are ready to help you get through your working day with ease.</p>
             </div>
         </div>
         

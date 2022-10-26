@@ -6,6 +6,7 @@ const Navigations = () => {
 
     return (
         <>
+        <div className="mainNav">
         <Row>
             <Col sm={1}>
                 
@@ -45,6 +46,7 @@ const Navigations = () => {
             </Row>     
             </Col>
         </Row>
+        </div>
     </>
     )
 }

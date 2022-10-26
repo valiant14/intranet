@@ -1,0 +1,48 @@
+.cardContent {
+    height: 50vh;
+    background-image: url(../../../assets/background/celeb4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cardText {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    h1 {
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30%;
+        font-weight: bold;
+        font-style: italic;
+        color: #fff;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        
+    }
+}
+
+.eventBtn {
+    margin-left: 40%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #222;
+    
+    font-size: 15px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+    &:hover {
+        
+        background-color: transparent;
+        color: #222;
+        border: 1px solid #222;
+    }
+}

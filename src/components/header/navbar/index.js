@@ -6,13 +6,12 @@ import './index.scss'
 const Navbar = () => {
     return (
         <Row>
-            <nav className="global-navs" role="navigation">
+            <div className="global-navs">
                 <ul >
-                    {/* <li>
-                    <p><span><Settings /></span>&nbsp;Settings</p>
-                    </li> */}
                     <li>
-                    {/* <a href="Apps"><span><Smartphone/></span>&nbsp;Apps</a> */}
+                    <p><span><Settings /></span>&nbsp;Settings</p>
+                    </li>
+                    <li>
                     <Dropdown>
                     <Dropdown.Toggle className="itemList">
                     <span><Smartphone/></span>&nbsp;Apps
@@ -31,7 +30,7 @@ const Navbar = () => {
                     <p><span><Briefcase/></span>&nbsp;WorkSpaces</p>
                     </li> */}
                 </ul>
-                </nav>
+            </div>
         </Row>
     )
 }

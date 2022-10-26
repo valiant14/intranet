@@ -3,17 +3,17 @@ import { Button } from 'react-bootstrap';
 import { Link,NavLink  } from "react-router-dom";
 import './index.scss'
 
-const UpcomingEvents = () => {
+const Events = () => {
 
   return (
     <>
         <div class="card">
               <a href='/news&events'>
-                 <div className='cardContentUp'>
-                    <div className='cardTextUp'>
-                        <h1 >Upcoming Event</h1>
+                 <div className='cardContent'>
+                    <div className='cardText'>
+                        <h1 >2022 Honoring Ceremony</h1>
                     </div>
-                    <Button className='eventBtnUp'>Read More</Button>
+                    <Button className='eventBtn'>Read More</Button>
                  </div>
               </a>
         </div>
@@ -21,4 +21,4 @@ const UpcomingEvents = () => {
   )
 }
 
-export default UpcomingEvents
+export default Events

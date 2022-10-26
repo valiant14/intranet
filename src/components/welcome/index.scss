@@ -1,0 +1,26 @@
+
+.welcome-container {
+
+    justify-content: center;
+    text-align: center;
+    background-color: #235090;
+    // background-image: url(../../../src/assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    padding: 9rem;
+    overflow: hidden;
+    color: #ffffff;
+    box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+    -webkit-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+    -moz-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
+
+    h1 {
+        font-size: 46px;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    }
+    p {
+        font-size: 18px;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    }
+  }

@@ -10,11 +10,6 @@
     white-space: nowrap;
     margin: 0;
     
-    ul {
-        margin: 0;
-        padding: 0;
-        color: #1E1D7A;
-    }
 
     li {
         list-style: none;
@@ -23,21 +18,16 @@
         margin-top: 5px;
     }
 
-    a {
-        display: block;
-        padding: .9em;
-        color: black;
-    }
-
-    &:hover a {
-        background-color: transparent;
-    }
 
     p {
-        font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
         display: block;
         padding: .9em;
         color: #fff;
+    }
+
+    span {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
     }
 
 }
@@ -45,6 +35,7 @@
 .itemList {
     background-color: transparent;
     border: none;
+
     &:hover {
         background-color: transparent;
         color: #fff;
@@ -53,7 +44,6 @@
 }
 
 .itemMenu {
-    color: #1E1D7A;
-    
+    color: #1E1D7A; 
 }
 
