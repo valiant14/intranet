@@ -37,7 +37,7 @@ const Navigations = () => {
                                 <Link to="/departments">Departments</Link>
                             </li>
                             <li>
-                                <Link to="/sendyourfeedback">Send your Feedback</Link>
+                                <Link to="/sendyourfeedback">Suggestion</Link>
                             </li>
                         </ul>
                     </nav>
