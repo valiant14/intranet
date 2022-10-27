@@ -8,10 +8,12 @@ import Welcome from '../../components/welcome/index'
 import Footer from '../../components/footer/index'
 import Chatbox from '../../components/chatbox/Avatar/chatbox'
 import Avatar from '../../components/chatbox/Avatar/avatar'
-import CeoAbout from '../../components/body/AboutCeo/Ceo'
+// import CeoAbout from '../../components/body/AboutCeo/Ceo'
 import UpcomingEvents from '../../components/body/upcomingEvents/index'
 import Events from '../../components/body/events';
 import Weathers from '../../components/body/weather';
+import CeoAbout from '../../components/body/AboutCeo/Ceo';
+
 function Home() {
 
 
@@ -38,6 +40,11 @@ function Home() {
       <Row>
         <Col>
           <Welcome />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <CeoAbout />
         </Col>
       </Row>
       <Row className='mt-5'>

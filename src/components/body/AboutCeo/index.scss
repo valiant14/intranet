@@ -1,0 +1,56 @@
+.AboutCeo {
+    margin-top: 7%;
+    padding: 2rem;
+    border: 1px solid #222;
+}
+
+.AboutCeoText {
+    margin-left: 25%;
+    margin-top: -10%;
+    position: relative;
+    z-index: 1;
+    h1 {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 40px;
+        color: #222;
+        font-weight: bold;
+    }
+}
+
+.ceoText {
+    position: relative;
+    margin-left: 25%;
+    margin-top: 1%;
+    font-size: 18px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #222;
+    text-align:center;
+    width: 500px;
+}
+
+.imageContainer {
+    width: 205px;
+    height: 205px;
+    margin-left: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.ceoImage {
+    margin-bottom: -1%;
+    margin-left: 1%;
+    height: max-content;
+    border-radius: 50%;
+}
+
+.ciclesDesign{
+    width: 180px;
+    height: 180px;
+    border: 1px solid #222;
+    border-radius: 50%;
+    background-color: #335891;
+    margin-left: 70%;
+    margin-bottom: -9%;
+    display: flex;
+}
