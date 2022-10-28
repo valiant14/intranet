@@ -6,6 +6,7 @@ import {Col, Row} from 'react-bootstrap';
 import './index.scss'
 
 const Feedbacks = () => {
+    
     return (
         <div className="suggetion-container">
             <div className="form-containers">
