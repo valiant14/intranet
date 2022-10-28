@@ -1,13 +1,29 @@
 .ceoImage {
-    height: 200px;
-    position: relative;
-    margin-right: .3rem;
-    margin-left: -.75rem;
+    height: 100px;
     margin-bottom: -1.9rem;
+    margin-top: -20%;
     box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
     -webkit-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
     -moz-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+  }
+  
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
 
 .titles {
     font-size: 24px;

@@ -80,14 +80,7 @@
       -webkit-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
       -moz-box-shadow: -12px 23px 24px -18px rgba(0,0,0,0.48);
     }
-    .drop__imgs {
-      width: 90px;
-      height: 90px;
-      opacity: 1;
-      z-index: 999;
-      border-radius: 1rem;
-      margin-right: 1rem;
-    }
+
 
     .drop__card {
       margin-top: 1rem;
@@ -98,6 +91,17 @@
       border-radius: 1rem;
     }
 
+.drop__imgs {
+      width: 60px;
+      height: 60px;
+      border-radius: 1rem;
+      margin-right: 1rem;
+  }
+
+.ceoReadMore {
+  font-size: var(--smaller-font-size);
+  color: #222;
+}
 
 .drop__img {
       width: 60px;
@@ -105,6 +109,7 @@
       border-radius: 1rem;
       margin-right: 1rem;
     }
+    
 .drop__name {
       font-size: var(--normal-font-size);
       color: var(--first-color);
