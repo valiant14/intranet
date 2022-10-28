@@ -10,8 +10,7 @@ const Documents = () => {
                     <div className="drop__data">
                         <img src="https://media.istockphoto.com/vectors/file-icon-format-pdf-download-document-image-button-vector-doc-icon-vector-id1356214382?b=1&k=20&m=1356214382&s=170667a&w=0&h=rnxZBD09iL8l39HbKK3k_3IixprVmtg2yBPnjcKpDbk=" alt="" className="drop__img"/>
                     <div>
-                        <h1 className="drop__name">New Update on AX</h1>
-                        <span className="drop__profession">Sep 26, 2022 2:00 PM</span>
+                        <h1 className="drop__name">Human Resources Policy</h1>
                     </div>
                     </div>
                  </div>
@@ -19,8 +18,7 @@ const Documents = () => {
                     <div className="drop__data">
                         <img src="https://media.istockphoto.com/vectors/file-icon-format-pdf-download-document-image-button-vector-doc-icon-vector-id1356214382?b=1&k=20&m=1356214382&s=170667a&w=0&h=rnxZBD09iL8l39HbKK3k_3IixprVmtg2yBPnjcKpDbk=" alt="" className="drop__img"/>
                     <div>
-                        <h1 className="drop__name">Agreement with STC renewed</h1>
-                        <span className="drop__profession">Sep 26, 2022 2:00 PM</span>
+                        <h1 className="drop__name">Computer and Laptop Policy</h1>
                     </div>
                     </div>
                  </div>
@@ -28,8 +26,7 @@ const Documents = () => {
                     <div className="drop__data">
                         <img src="https://media.istockphoto.com/vectors/file-icon-format-pdf-download-document-image-button-vector-doc-icon-vector-id1356214382?b=1&k=20&m=1356214382&s=170667a&w=0&h=rnxZBD09iL8l39HbKK3k_3IixprVmtg2yBPnjcKpDbk=" alt="" className="drop__img"/>
                     <div>
-                        <h1 className="drop__name">Seder Hit the Jackpot with new 1B</h1>
-                        <span className="drop__profession">Sep 26, 2022 2:00 PM</span>
+                        <h1 className="drop__name">Company Vehicles and Rental Policy</h1>
                     </div>
                     </div>
                  </div>
@@ -37,8 +34,7 @@ const Documents = () => {
                     <div className="drop__data">
                         <img src="https://media.istockphoto.com/vectors/file-icon-format-pdf-download-document-image-button-vector-doc-icon-vector-id1356214382?b=1&k=20&m=1356214382&s=170667a&w=0&h=rnxZBD09iL8l39HbKK3k_3IixprVmtg2yBPnjcKpDbk=" alt="" className="drop__img"/>
                     <div>
-                        <h1 className="drop__name">Seder Hit the Jackpot with new 1B</h1>
-                        <span className="drop__profession">Sep 26, 2022 2:00 PM</span>
+                        <h1 className="drop__name">Internet and SIM Policy</h1>
                     </div>
                     </div>
                  </div>
