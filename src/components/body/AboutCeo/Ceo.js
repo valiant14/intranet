@@ -6,29 +6,23 @@ import './index.scss'
 const CeoAbout = () => {
     return (
         <>
-        <Row>
-            <Col>
-                <div className="AboutCeo">
-                    <div className="ciclesDesign"></div>
-                        <div className="imageContainer">
-                            <img src={ceo} alt="" className="ceoImage"></img>
+            <div className="ceo_container">
+                <div className="ceo_wrapper">
+                    <div className="ceo_testimonial">
+                        <div className="ceo_div">
+                            <h1>about ceo</h1>
+                            <img src={ceo}></img>
+                            <blockquote>
+                                "Experienced Chief Executive Officer with 20 years of experience with a demonstrated history of working in
+                                different industries mainly ICT. Skilled in leadership, building strategies, management, communications, and
+                                business development".
+                            </blockquote>
+                            <h5>Valiant Ocampo</h5>
+                            <p>Chief Executive Officer</p>
                         </div>
-
-
-                    
-                    <div className="AboutCeoText">
-                        <h1>About Ceo</h1>
                     </div>
-                    <div className="ceoText">
-                    <p>Experienced Chief Executive Officer with 20 years of experience with a demonstrated history of working in
-                    different industries mainly ICT. Skilled in leadership, building strategies, management, communications, and
-                    business development.</p>
-                    </div>
-                </div>
-            </Col>
-        </Row>
-
-        
+                </div>  
+            </div>     
         </>
     )
 }
