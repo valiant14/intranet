@@ -1,0 +1,61 @@
+.suggetion-container {
+    height: 100vh;
+    border: 5px solid #1C6EA4;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-containers {
+    width: 40%;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+    -webkit-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+    -moz-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+
+
+
+    Form {
+
+        Label {
+            font-size: 15px;
+        }
+        input {
+            font-size: 15px;
+        }
+        input:valid {
+            animation: shake .3s;
+        }
+
+        Button {
+            background-color: #1C6EA4;
+            font-size: 15px;
+            border: 1px solid #1C6EA4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: right;
+        }
+    }
+
+    
+}
+
+
+@keyframes shake {
+    25% { transform: translateX(4px)}
+    50% { transform: translateX(-4px)}
+    75% { transform: translateX(4px)}
+}
+
+.suggestion_title {
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.text-muteds {
+    font-size: 12px;
+}
