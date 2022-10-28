@@ -1,27 +1,29 @@
 .suggetion-container {
-    height: 100vh;
-    border: 5px solid #1C6EA4;
+    height: 150vh;
+    border: 3px solid #0098c1;
     box-sizing: border-box;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 1rem;
 }
 
 .form-containers {
     width: 40%;
     border-radius: 1rem;
+    background-color: #0098c1;
     padding: 2rem;
     box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
     -webkit-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
     -moz-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
-
-
-
+    translate: 0rem 1rem;
     Form {
+        translate: 0rem -10rem;
 
         Label {
             font-size: 15px;
+            color: #fff;
         }
         input {
             font-size: 15px;
@@ -31,13 +33,22 @@
         }
 
         Button {
-            background-color: #1C6EA4;
+            background-color: #fff;
             font-size: 15px;
-            border: 1px solid #1C6EA4;
+            border: 1px solid #fff;
             display: flex;
             align-items: center;
             justify-content: center;
             float: right;
+            translate: -1rem 2rem;
+            color: #000;
+
+
+            &:hover {
+                border: 1px solid #1C6EA4;
+                background-color:#1C6EA4;
+
+            }
         }
     }
 
@@ -54,8 +65,83 @@
 .suggestion_title {
     font-size: 20px;
     margin-bottom: 5%;
+    color: #fff;
 }
 
 .text-muteds {
     font-size: 12px;
+    color: #fff;
 }
+
+.saudiIcon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    translate: .6rem -5rem;
+    border-radius: 50%;
+    background: url(../../assets/saudi.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+    -webkit-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+    -moz-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+  }
+
+  .saudiText {
+    width: 300px;
+    height: 75px;
+    position: relative;
+    border-radius: 20rem;
+    translate: 10rem -15rem;
+    border: 2px solid #0098c1;
+    background-color:#0098c1;
+    color: #fff;
+    box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+-webkit-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+-moz-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        translate: 0rem 1.5rem;
+        font-size: 17px;
+    }
+  }
+
+  .dotDot {
+    height: 20px;
+    width: 20px;
+    border: 2px solid #0098c1;
+    background-color:#0098c1;
+    translate: 9rem -16rem;
+    border-radius: 50%;
+    box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+-webkit-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+-moz-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+  }
+
+  .dotDot2 {
+    height: 15px;
+    width: 15px;
+    border: 2px solid #0098c1;
+    background-color:#0098c1;
+    translate: 8rem -16rem;
+    border-radius: 50%;
+    box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+-webkit-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+-moz-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+  }
+
+  .dotDot3 {
+    height: 10px;
+    width: 10px;
+    border: 2px solid #0098c1;
+    background-color:#0098c1;
+    translate: 7rem -16rem;
+    border-radius: 50%;
+    box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+-webkit-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+-moz-box-shadow: -2px 3px 10px -4px rgba(0,0,0,0.95);
+  }

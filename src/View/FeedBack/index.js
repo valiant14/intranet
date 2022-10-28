@@ -9,7 +9,16 @@ const Feedbacks = () => {
     return (
         <div className="suggetion-container">
             <div className="form-containers">
-            <h3 className="suggestion_title">Got a suggetion? Type it belows.</h3>
+            <div className="saudiIcon"></div>
+            <div className="saudiText">
+                <p>
+                    Got a suggetion? Type it belows
+                </p>
+            </div>
+            <div className="dotDot"></div>
+            <div className="dotDot2"></div>
+            <div className="dotDot3"></div>
+            {/* <h3 className="suggestion_title">Got a suggetion? Type it belows.</h3> */}
             <Form>
                 <Form.Group className="mb-3">
                     <Row>
