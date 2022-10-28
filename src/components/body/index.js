@@ -13,15 +13,16 @@ const ContentView = () => {
         <div className='container-lg'>
             <Row>
                 <Col>
-                    <Features />
+                    {/* <Features /> */}
+                    <StaffAnnouncement />
                 </Col>
                 <Col>
                     <UpcomingEvents />
-                    <Documents />
+                    <Weathers />
                 </Col>
                 <Col>
-                    <StaffAnnouncement />
-                    <Weathers />
+                    <Documents />
+                    
                 </Col>
             </Row>
         </div>
