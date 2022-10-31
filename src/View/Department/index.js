@@ -1,8 +1,18 @@
 import React from "react";
+import ContactTables from "./table/indexTable";
+import {Row, Col} from 'react-bootstrap'
+import './index.scss'
 
 const Departments = () => {
     return (
-    <h1>Departments</h1>
+    <>
+        <Row>
+            <Col>
+                <ContactTables />
+            </Col>
+        </Row>
+        
+    </>
     )
 }
 

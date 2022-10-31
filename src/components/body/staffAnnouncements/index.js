@@ -18,7 +18,7 @@ const StaffAnnouncement = () => {
                             <p class="card-text mt-3">"Experienced Chief Executive Officer with 20 years of experience with a demonstrated history of working in
                             different industries mainly ICT. Skilled in leadership, building strategies, management, communications, and
                             business development".</p>
-                            <h6 className='ceo_name'>Valiant Ocampo</h6>
+                            <h6 className='ceo_name'>Loai Alammar</h6>
                             <p className='ceo_title'>Chief Executive Officer</p>
                           </Col>
                         </Row>
