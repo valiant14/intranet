@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col, Card, Pagination } from 'react-bootstrap';
 import BTable from 'react-bootstrap/Table';
 import { useTable, usePagination, useGlobalFilter } from 'react-table'
-
+import { Button } from "react-bootstrap"
 import makeData from './sampleData';
 import { GlobalFilter } from './GlobalFilter';
 
@@ -34,7 +34,7 @@ function Table({ columns, data }) {
     {
       columns,
       data,
-      initialState: { pageIndex: 2 },
+      initialState: { pageIndex: 0 },
     },
     useGlobalFilter,
     usePagination
@@ -81,7 +81,12 @@ function Table({ columns, data }) {
             return (
               <tr {...row.getRowProps()}>
                 {row.cells.map(cell => {
-                  return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                  return <td {...cell.getCellProps({
+                    style: {
+                        textAlign:'center',
+                        fontSize: '14px',
+                        }
+                  })}>{cell.render('Cell')}</td>
                 })}
               </tr>
             )
@@ -118,57 +123,93 @@ function Table({ columns, data }) {
   )
 }
 
-function ContactTables() {
+function ContactTables({items}) {
+
+    const isActive = () => {
+        return <>
+            <div className='activeCicles'></div>
+        </>
+    }
+
+    const notActive = () => {
+        return <>
+            <div className='notCicles'></div>
+        </>
+    }
+
+    const afk = () => {
+        return <>
+            <div className='awayThis'></div>
+        </>
+    }
   const columns = React.useMemo(
     () => [
-      
-
           {
             Header: 'Avatar',
-            accessor: 'photo',
+            accessor: value => value.avatar,
+            Cell: ({ cell: { value } }) => <img src={value} className="avatarsIcon"></img>,
           },
           {
             Header: 'First Name',
-            accessor: 'firstName',
+            accessor: value => value.firstName,
+            Cell: ({ cell: { value } }) => <span className='fname'>{value}</span>,
           },
           {
             Header: 'Last Name',
-            accessor: 'lastName',
+            accessor: value => value.lastName,
+            Cell: ({ cell: { value } }) => <span className='fname'>{value}</span>,
           },
           {
             Header: 'Job Title',
-            accessor: 'jobTitle',
+            accessor: value => value.jobTitle,
+            Cell: ({ cell: { value } }) => <span className='fname'>{value}</span>,
           },
           {
             Header: 'Department',
-            accessor: 'department',
+            accessor: value => value.department,
+            Cell: ({ cell: { value } }) => <span className='fname'>{value}</span>,
           },
           {
             Header: 'Email',
-            accessor: 'email',
+            accessor: value => value.Email,
+            Cell: ({ cell: { value } }) => <span className='fname'>{value}</span>,
           },
           {
             Header: 'Ext. Number',
-            accessor: 'extNumber',
+            accessor: value => value.extNum,
+            Cell: ({ cell: { value } }) => <span className='fname'>{value}</span>,
           },
           {
             Header: 'Mobile Number',
-            accessor: 'mobileNumber',
-          },
-          {
-            Header: 'Profile',
-            accessor: 'profile',
+            accessor: value => value.mobileNUm,
+            Cell: ({ cell: { value } }) => <span className='fname'>{value}</span>,
           },
           {
             Header: 'Status',
-            accessor: 'status',
+            accessor: value => {if(value.status === 'Active') return isActive()
+            else if ( value.status === "Offline") return notActive()
+            else if ( value.status === "Away") return afk()},
+            Cell: ({ cell: { value } }) => <span className='fname'>{value}</span>,
           },
+          {
+            Header: 'Profile',
+            Cell: row => (
+                <div className="d-flex align-items-center">
+                    <Button variant="primary" className="btn-table" onClick={e => openHandler(row.row.original)}><span>View</span></Button>
+                </div>
+            ),
+        },
+
+
     ],
     []
   )
 
-  const data = React.useMemo(() => makeData(500), [])
+  const data = React.useMemo(() => items, [items])
 
+  const openHandler = () => {
+    console.log('test')
+    };
     return (
         <React.Fragment>
           <Row>
