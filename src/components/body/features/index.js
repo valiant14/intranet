@@ -55,7 +55,7 @@ const Features = () => {
                                 different industries mainly ICT. Skilled in leadership, building strategies, management, communications, and
                                 business development".
                             </blockquote>
-                            <h5>Valiant Ocampo</h5>
+                            <h5>Loai Alammar</h5>
                             <p>Chief Executive Officer</p>
                         </div>
                     </div>
