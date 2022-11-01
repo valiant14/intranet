@@ -123,7 +123,7 @@ function Table({ columns, data }) {
   )
 }
 
-function ContactTables({items}) {
+function ContactTables({items, handleShow}) {
 
     const isActive = () => {
         return <>
@@ -208,7 +208,7 @@ function ContactTables({items}) {
   const data = React.useMemo(() => items, [items])
 
   const openHandler = () => {
-    console.log('test')
+        handleShow()
     };
     return (
         <React.Fragment>

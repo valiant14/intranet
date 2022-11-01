@@ -53,3 +53,57 @@
     background-color: #fff;
     box-shadow:0 0 15px orange,0 0 35px orange,0 0 50px orange;
 }
+
+.customModal {
+    display: flex;
+    translate: 0rem 5rem;
+}
+
+
+
+.Profile-container {
+    border: 1px solid #333;
+    height: 50vh;
+    box-sizing: border-box;
+    background-color: #101116;
+}
+
+.Profile-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.Profile-image {
+    position: relative;
+    border: 2px solid #fff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.Profile-Name {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    font-size: 20px;
+    color: #ececec;
+}
+
+.Profile-Position {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    color: #ececec;
+}
+.Profile-Btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    // background-color: #3a71c1;
+    // color: #ececec;
+}
