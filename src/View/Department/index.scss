@@ -78,8 +78,8 @@
 .Profile-image {
     position: relative;
     border: 2px solid #fff;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
 }
 
@@ -106,4 +106,38 @@
     padding: .5rem;
     // background-color: #3a71c1;
     // color: #ececec;
+}
+
+.Profile-Properties {
+    position: relative;
+    padding: .5rem;
+    display: flex;
+    background-color: #fff;
+    height: 211px;
+    border: 1px solid #fff;
+    translate: 0rem .60rem;
+    box-shadow: 2px -4px 8px 1px rgba(0,0,0,0.21) inset;
+    -webkit-box-shadow: 2px -4px 8px 1px rgba(0,0,0,0.21) inset;
+    -moz-box-shadow: 2px -4px 8px 1px rgba(0,0,0,0.21) inset;
+    -webkit-box-shadow: -1px 5px 8px 1px rgba(0,0,0,0.21) inset;
+    -moz-box-shadow: -1px 5px 8px 1px rgba(0,0,0,0.21) inset;
+}
+
+.Identify{
+    position: relative;
+    width: 50%;
+    border: 1px solid #222;
+
+    h1 {
+        font-size: 14px;
+    }
+}
+.Contact-info {
+    position: relative;
+    width: 50%;
+    border: 1px solid #222;
+
+    h1 {
+        font-size: 14px;
+    }
 }
