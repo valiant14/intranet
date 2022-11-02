@@ -34,7 +34,7 @@ const Navigations = () => {
                                 <Link to="/contacts">Contacts</Link>
                             </li>
                             <li>
-                                <Link to="/departments">Departments</Link>
+                                <Link to="/knowledge">Knowledge Base</Link>
                             </li>
                             <li>
                                 <Link to="/sendyourfeedback">Suggestion</Link>

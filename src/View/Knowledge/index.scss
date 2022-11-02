@@ -1,0 +1,42 @@
+@import "~video-react/styles/scss/video-react"; // or import scss
+
+.video-container {
+    height: 100vh;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.video-content {
+    height: 50vh;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-top: calc(5%);
+    width: 750px;
+
+}
+
+.base-container {
+    height: 100vh;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.base-items {
+    width: 1020px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    columns: row;
+    gap: 5rem;
+    padding: 1rem;
+}
+.base-card{
+    box-sizing: border-box;
+    height: 500px;
+    border: 1px solid black;
+}
+

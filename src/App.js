@@ -11,7 +11,10 @@ import Newevents from './View/New&Event/index'
 import StaffEssentials from './View/StaffEssentials/index2'
 import Forms from './View/StaffEssentials/Form/index'
 import Contacts from './View/Contacts/index'
-import Departments from './View/Department/index'
+import KnowledgeBase from './View/Knowledge/index';
+import KnowledgeBase_s1 from './View/Knowledge/sessions/session1';
+import KnowledgeBase_s2 from './View/Knowledge/sessions/session2';
+import KnowledgeBase_s3 from './View/Knowledge/sessions/session3';
 import Feedbacks from './View/FeedBack/index'
 import Footer from './components/footer';
 import { signInAnonymously,onAuthStateChanged  } from "firebase/auth";
@@ -64,7 +67,10 @@ function App() {
                   <Route exact path='/news&events' element={< Newevents />}></Route>
                   <Route exact path='/staffEssentials' element={< StaffEssentials data={data}/>}></Route>
                   <Route exact path='/contacts' element={< Contacts />}></Route>
-                  <Route exact path='/departments' element={< Departments />}></Route>
+                  <Route exact path='/knowledge' element={< KnowledgeBase />}></Route>
+                  <Route exact path='/knowledge/dayone' element={< KnowledgeBase_s1 />}></Route>
+                  <Route exact path='/knowledge/daytwo' element={< KnowledgeBase_s2 />}></Route>
+                  <Route exact path='/knowledge/daythree' element={< KnowledgeBase_s3 />}></Route>
                   <Route exact path='/sendyourfeedback' element={< Feedbacks />}></Route>
                   <Route exact path='/staffEssentials/forms' element={< Forms data={data}/>}></Route>
               </Routes>

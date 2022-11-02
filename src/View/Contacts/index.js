@@ -1,21 +1,42 @@
-import React from "react";
-import contacts from '../../assets/contacts.png'
-import {Col, Row} from 'react-bootstrap'
+import React,{useState} from "react";
+import ContactTables from "./table/indexTable";
+import {Row, Col, Modal, Button} from 'react-bootstrap'
 import './index.scss'
+import { data } from "./data";
+import ProfileCard from "./profileCard";
 
-const Contacts = () => {
+const Departments = () => {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
-        <React.Fragment>
-            <Row>
-                <Col className="new-image">
-                    <img src={contacts} />
-                </Col>
-            </Row>
-        
-        </React.Fragment>
+    <>
+        <Row>
+            <Col>
+                <ContactTables items={data} handleShow={handleShow}/>
+            </Col>
+        </Row>
+
+        <Modal show={show} onHide={handleClose} className='customModal'>
+            <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+            </Modal.Header>
+                <Modal.Body>
+                    <ProfileCard />
+                </Modal.Body>
+            <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+                Close
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+                Save Changes
+            </Button>
+            </Modal.Footer>
+        </Modal>
+    </>
     )
 }
 
-export default Contacts
-
-
+export default Departments

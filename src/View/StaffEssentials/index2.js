@@ -27,23 +27,11 @@ const StaffEssentials = () => {
             )
         }
 
+        const hrPolicy = () => {
+            window.open()
+        }
+
     return (
-        // <Row>
-        //     <Col sm={3}>
-        //         <div style={{ display: 'flex', height: '100vh' }}>
-        //             <Sidebar className="mt-3">
-        //                 <Menu>
-        //                     <MenuItem> Documentation</MenuItem>
-        //                     <MenuItem> Calendar</MenuItem>
-        //                     <MenuItem> E-commerce</MenuItem>
-        //                 </Menu>
-        //             </Sidebar>
-        //     </div>
-        //     </Col>
-        //     <Col sm={9}>
-        //         <CardView />
-        //     </Col>
-        // </Row>
         <React.Fragment>
             <Row className="mb-5">
                 <Col sm={2}>
@@ -80,7 +68,7 @@ const StaffEssentials = () => {
                     <div className="main-container">
                         <Row>
                             <Col>
-                            <a href={HR} download="HR policy">
+                            <a href={HR} target="_blank">
                                 <div className="main-card hoverM3">
                                     <div><FileText/></div>
                                     <h1>HR Policies</h1>
@@ -90,7 +78,7 @@ const StaffEssentials = () => {
                             </a>
                             </Col>
                             <Col>
-                            <a href={IT} download="Desktop Computers and Laptop Policy">
+                            <a href={IT} target="_blank">
                                 <div className="main-card">
                                     <div><FileText/></div>
                                     <h1>Desktop and Laptop</h1>
@@ -99,7 +87,7 @@ const StaffEssentials = () => {
                             </a>
                             </Col>
                             <Col>
-                            <a href={Fleet} download="Car exchange, purchase and rental policy">
+                            <a href={Fleet} target="_blank">
                                 <div className="main-card">
                                     <div><FileText/>
                                     </div>
@@ -112,7 +100,7 @@ const StaffEssentials = () => {
                         </Row>
                         <Row className="mt-5">
                             <Col>
-                            <a href={SIM} download="Internet Sim policy">
+                            <a href={SIM} target="_blank">
                                 <div className="main-card">
                                     <div><FileText/></div>
                                     <h1>Internet Sim Policy</h1>
