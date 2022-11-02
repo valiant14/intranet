@@ -1,5 +1,6 @@
 import React from "react";
 import {Col, Row, Card, InputGroup,Form} from 'react-bootstrap'
+import { motion } from "framer-motion"
 import { Sidebar, Menu, MenuItem, SubMenu,useProSidebar } from 'react-pro-sidebar';
 import CardView from '../StaffEssentials/Card/index'
 import { Search,FileText, ArrowUpRight, Users,BarChart2, DollarSign, LogOut,Flag } from 'react-feather';
@@ -33,6 +34,11 @@ const StaffEssentials = () => {
 
     return (
         <React.Fragment>
+            <motion.div 
+                initial={{ y: "100%"}}
+                animate={{ y: "0%"}}
+                transition={{duration: 0.75, ease: "easeOut"}}
+                exit={{opacity: 1}}>
             <Row className="mb-5">
                 <Col sm={2}>
                     <Row>
@@ -177,6 +183,7 @@ const StaffEssentials = () => {
                     </div>
                 </Col>
             </Row>
+            </motion.div>
         </React.Fragment>
     )
 }

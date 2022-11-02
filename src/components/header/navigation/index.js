@@ -1,9 +1,15 @@
 import React from "react";
 import seder from '../../../assets/seder.png'
 import { Row, Col } from 'react-bootstrap';
-import {Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import { useLocation } from "react-router-dom"
+
+
 const Navigations = () => {
 
+    const location = useLocation();
+    
     return (
         <>
         <Row>
@@ -42,7 +48,10 @@ const Navigations = () => {
                         </ul>
                     </nav>
                 </Col>
-            </Row>     
+            </Row>
+            <AnimatePresence initial={false}>
+                <Outlet key={location.pathname}/> 
+            </AnimatePresence>
             </Col>
         </Row>
     </>

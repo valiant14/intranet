@@ -2,6 +2,7 @@ import React from "react";
 import './index.scss'
 import { Player } from 'video-react';
 import S1 from '../../assets/video/BasicTrainingS1.mp4'
+import { motion } from "framer-motion"
 import {Col, Row, Card, InputGroup,Form, Button} from 'react-bootstrap'
 import { Search,FileText, Youtube } from 'react-feather';
 import { Link } from "react-router-dom";
@@ -22,6 +23,11 @@ const KnowledgeBase = () => {
 
     return (
         <React.Fragment>
+            <motion.div 
+                initial={{ y: "100%"}}
+                animate={{ y: "0%"}}
+                transition={{duration: 0.75, ease: "easeOut"}}
+                exit={{opacity: 1}}>
         <Row className="mb-5">
             <Col sm={2}>
                 <Row>
@@ -165,6 +171,7 @@ const KnowledgeBase = () => {
                 </div>
             </Col>
         </Row>
+        </motion.div>
     </React.Fragment>
         // <React.Fragment>
 
