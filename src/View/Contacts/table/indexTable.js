@@ -70,7 +70,12 @@ function Table({ columns, data }) {
           {headerGroups.map(headerGroup => (
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map(column => (
-                <th {...column.getHeaderProps()}>{column.render('Header')}</th>
+                <th {...column.getHeaderProps({
+                  style: {
+                    textAlign:'center',
+                    fontSize: '16px',
+                  }
+                })}>{column.render('Header')}</th>
               ))}
             </tr>
           ))}
@@ -97,7 +102,7 @@ function Table({ columns, data }) {
         <Col sm={12} md={6}>
             <span className="d-flex align-items-center">
                 Page{' '} <strong> {pageIndex + 1} of {pageOptions.length} </strong>{' '}
-                | Go to page:{' '}
+                &nbsp;| Go to page {' '} &nbsp;
                 <input
                     type="number"
                     className='form-control ml-2'
@@ -171,7 +176,7 @@ function ContactTables({items, handleShow}) {
           },
           {
             Header: 'Email',
-            accessor: value => value.Email,
+            accessor: value => value.email,
             Cell: ({ cell: { value } }) => <span className='fname'>{value}</span>,
           },
           {
